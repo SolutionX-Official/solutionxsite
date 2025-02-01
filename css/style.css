@@ -1096,7 +1096,7 @@ a.button:hover {
 }
 
 .serviceslist li:before{
-	content: '\eb41';
+	content: '✔'; 
 	font-family: unicons-line;
     font-style: normal;
     font-weight: 400;
