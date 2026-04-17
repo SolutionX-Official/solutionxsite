@@ -1,496 +1,514 @@
 <!DOCTYPE html>
-<html lang="en" class="no-js">
-  <head>
-    <meta charset="utf-8" />
-    <title>SolutionX - Contact Us</title>
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="theme-color" content="#ffffff" />
-    <link href="images/favicon.png" rel="icon" />
-    <link rel="prerender" href="index.html" />
+<html lang="en">
 
-    <meta name="page-topic" content="Web Development & GenAI Solutions" />
-    <meta name="author" content="SolutionX Team" />
-    <meta
-      name="description"
-      content="Get in touch with SolutionX for innovative Web and GenAI solutions. Contact us for inquiries or project collaboration."
-    />
-    <meta
-      name="keywords"
-      content="Web Development, AI Solutions, GenAI, Contact, Business Automation, Custom Web Apps"
-    />
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Connect with SolutionX - PHP, Mobile & AI Solutions</title>
+  <meta name="description"
+    content="Reach out to SolutionX for experts in PHP CI4, WordPress dev, React Native apps, and specialized AI (CV, NLP) solutions." />
+  <meta name="keywords"
+    content="Hire PHP Developers, React Native Experts, WordPress Theme Dev, Contact AI Agency, Global Tech Partner" />
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Be+Vietnam+Pro:wght@300;400;500;600&amp;display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": { "surface": "#f7f9fb", "outline-variant": "#c4c6d1", "surface-bright": "#f7f9fb", "tertiary-fixed": "#7df4ff", "on-secondary-fixed": "#001b3d", "error": "#ba1a1a", "on-tertiary": "#ffffff", "tertiary": "#001d20", "secondary": "#495f84", "on-primary": "#ffffff", "secondary-fixed-dim": "#b1c7f2", "surface-dim": "#d8dadc", "tertiary-container": "#003438", "inverse-surface": "#2d3133", "surface-variant": "#e0e3e5", "error-container": "#ffdad6", "secondary-container": "#bcd2fe", "inverse-primary": "#b8c3ff", "surface-container": "#eceef0", "primary-container": "#002283", "on-secondary": "#ffffff", "on-surface-variant": "#43474f", "on-tertiary-container": "#00a6b0", "on-primary-container": "#758eff", "secondary-fixed": "#d6e3ff", "surface-container-lowest": "#ffffff", "on-tertiary-fixed-variant": "#004f54", "on-error": "#ffffff", "surface-container-highest": "#e0e3e5", "on-error-container": "#93000a", "primary-fixed": "#dde1ff", "surface-container-high": "#e6e8ea", "primary": "#001151", "primary-fixed-dim": "#b8c3ff", "on-background": "#191c1e", "on-secondary-fixed-variant": "#31476b", "on-secondary-container": "#445a7f", "outline": "#747781", "on-primary-fixed-variant": "#0035be", "inverse-on-surface": "#eff1f3", "surface-tint": "#124af0", "on-primary-fixed": "#001356", "on-surface": "#191c1e", "tertiary-fixed-dim": "#00dbe9", "on-tertiary-fixed": "#002022", "background": "#f7f9fb", "surface-container-low": "#f2f4f6" },
+          "borderRadius": { "DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px" },
+          "fontFamily": { "headline": ["Plus Jakarta Sans"], "body": ["Be Vietnam Pro"], "label": ["Be Vietnam Pro"] }
+        }
+      }
+    }
+  </script>
+  <style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
 
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:site" content="@solutionx" />
-    <meta name="twitter:title" content="SolutionX - Contact Us" />
-    <meta name="twitter:url" content="contact.html" />
-    <meta
-      name="twitter:description"
-      content="Reach out to SolutionX to discuss your Web or AI project. We're here to help you innovate and grow."
-    />
-    <meta name="twitter:image" content="images/meta-cover.jpg" />
+    .glass-nav {
+      background: rgba(255, 255, 255, 0.8);
+      backdrop-filter: blur(24px);
+      -webkit-backdrop-filter: blur(24px);
+    }
+  </style>
+</head>
 
-    <meta property="og:locale" content="en_US" />
-    <meta property="og:url" content="contact.html" />
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="SolutionX - Contact Us" />
-    <meta
-      property="og:description"
-      content="Contact SolutionX to collaborate on Web and AI solutions that transform your business."
-    />
-    <meta property="og:image" content="images/meta-cover.jpg" />
-    <meta property="og:image:secure_url" content="images/meta-cover.jpg" />
-    <meta property="og:image:width" content="900" />
-    <meta property="og:image:height" content="570" />
-    <meta property="og:site_name" content="SolutionX" />
-
-    <meta name="robots" content="index, follow" />
-    <meta name="Googlebot" content="index, follow" />
-    <meta name="rating" content="general" />
-    <meta name="distribution" content="global" />
-    <link rel="canonical" href="contact.html" />
-
-    <link href="css/bootstrap.min.css" rel="stylesheet" />
-    <link href="css/plugin.min.css" rel="stylesheet" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap"
-      rel="stylesheet"
-    />
-    <!-- Unicons CDN -->
-    <link
-      rel="stylesheet"
-      href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
-    />
-    <!-- Bootstrap CSS (since you're using data-bs attributes) -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384+QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
-    <link href="css/style.css" rel="stylesheet" />
-  </head>
-
-  <body>
-    <div class="bg"></div>
-    <header class="separateweb-header fixed-top">
-      <div class="container-fluid separatewebmobileheader">
-        <div class="menu-header">
-          <div class="menu-logo">
-            <div class="dskt-logo">
-              <a class="nav-brand" href="index.html">
-                <img
-                  src="images/logo.png"
-                  alt="SolutionX Logo"
-                  style="font-weight: 900"
-                  class="swtextanimate"
-                />
-              </a>
-            </div>
-          </div>
-          <div class="separateweb-nav" role="navigation">
-            <ul class="separateweb-list">
-              <li><a href="index.html" class="sw-links">Home</a></li>
-              <li><a href="about.html" class="sw-links">About</a></li>
-              <li><a href="services.html" class="sw-links">Services</a></li>
-              <li><a href="portfolio.html" class="sw-links">Portfolio</a></li>
-            </ul>
-          </div>
-          <div class="separateweb-nav-cta">
-            <ul class="sw-menu-sw-set">
-              <li>
-                <a
-                  href="contact.html"
-                  class="port-links separateweb-btn swheader"
-                >
-                  <span class="swdkttxt">GET IN TOUCH</span>
-                  <i class="uil uil-envelope"></i>
-                </a>
-              </li>
-              <li>
-                <button
-                  class="separateweb-menu separateweb-m"
-                  type="button"
-                  data-bs-toggle="offcanvas"
-                  data-bs-target="#demo"
-                >
-                  <i class="uil uil-bars"></i>
-                </button>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="mobilenav">
-          <div class="offcanvas offcanvas-start" id="demo">
-            <div class="offcanvas-header">
-              <div class="separteweblogo">
-                <img src="images/mobile-logo.png" alt="SolutionX Logo" />
-              </div>
-              <button
-                type="button"
-                class="btn-close"
-                data-bs-dismiss="offcanvas"
-              ></button>
-            </div>
-            <div class="offcanvas-body">
-              <p class="swmenulabl">Menu</p>
-              <ul class="separateweb-m-list">
-                <li>
-                  <a href="index.html"><i class="uil uil-estate"></i> Home</a>
-                </li>
-                <li>
-                  <a href="about.html"
-                    ><i class="uil uil-user-square"></i> About</a
-                  >
-                </li>
-                <li>
-                  <a href="services.html"
-                    ><i class="uil uil-setting"></i> Services</a
-                  >
-                </li>
-                <li>
-                  <a href="portfolio.html"
-                    ><i class="uil uil-briefcase-alt"></i> Portfolio</a
-                  >
-                </li>
-              </ul>
-              <p class="swmenulabl mt40">Connect with Us</p>
-              <ul class="separateweb-m-list">
-                <li>
-                  <a
-                    href="https://www.linkedin.com/company/solutionx"
-                    target="_blank"
-                    ><i class="uil uil-linkedin-alt"></i> LinkedIn</a
-                  >
-                </li>
-                <li>
-                  <a href="https://github.com/solutionx" target="_blank"
-                    ><i class="uil uil-github"></i> GitHub</a
-                  >
-                </li>
-                <li>
-                  <a href="https://x.com/solutionx" target="_blank"
-                    ><i class="uil uil-twitter-alt"></i> X (Twitter)</a
-                  >
-                </li>
-                <li>
-                  <a href="https://www.instagram.com/solutionx" target="_blank"
-                    ><i class="uil uil-instagram"></i> Instagram</a
-                  >
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
+<body class="bg-surface font-body text-on-surface antialiased">
+  <!-- TopNavBar -->
+  <nav class="fixed top-0 w-full z-50 glass-nav shadow-sm">
+    <div class="max-w-7xl mx-auto flex justify-between items-center px-8 py-4">
+      <a href="index.html" class="text-xl font-bold tracking-tighter text-blue-950 no-underline">SolutionX</a>
+      <div class="hidden md:flex items-center gap-8">
+        <a class="text-slate-600 hover:text-blue-900 transition-colors font-headline text-sm tracking-wide"
+          href="index.html">Home</a>
+        <a class="text-slate-600 hover:text-blue-900 transition-colors font-headline text-sm tracking-wide"
+          href="about.html">About</a>
+        <a class="text-slate-600 hover:text-blue-900 transition-colors font-headline text-sm tracking-wide"
+          href="services.html">Services</a>
+        <a class="text-slate-600 hover:text-blue-900 transition-colors font-headline text-sm tracking-wide"
+          href="portfolio.html">Portfolio</a>
       </div>
-    </header>
-
-    <div id="separateweb-content">
-      <div class="page-heading-sec pt85">
-        <div class="container">
-          <div class="row pt100">
-            <div class="col-lg-5">
-              <div class="page-headings">
-                <h1 class="mb20">
-                  Let’s Build Your Next
-                  <span class="swtextanimate">Solution</span>
-                </h1>
-                <h4 class="fw400">
-                  Contact us to discuss your Web or GenAI project—we’re here to
-                  bring your vision to life.
-                </h4>
-              </div>
-              <div class="separatewebforblock mt60">
-                <div class="separatewebforin">
-                  <p class="infoseparateweb">Phone</p>
-                  <a href="tel:+923160865324" class="datasw">+92 316 0865324</a>
-                </div>
-                <div class="separatewebforin">
-                  <p class="infoseparateweb">Email</p>
-                  <a href="mailto:solutionxoffical@gmail.com" class="datasw"
-                    >solutionxoffical@gmail.com</a
-                  >
-                </div>
-                <div class="separatewebforin">
-                  <p class="infoseparateweb">Location</p>
-                  <p class="datasw">
-                    Muzaffarabad, Azad Jammu and Kashmir, Pakistan
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-7">
-              <div class="contact-form-card-pr contact-block-btm">
-                <div class="separate-web-fb">
-                  <form
-                    action="https://formsubmit.co/solutionxoffical@gmail.com"
-                    method="POST"
-                    id="contactform"
-                    class="separatewebform"
-                  >
-                    <input type="hidden" name="_captcha" value="false" />
-                    <input
-                      type="hidden"
-                      name="_next"
-                      value="https://yourwebsite.com/thank-you"
-                    />
-                    <div class="fieldsets row">
-                      <div class="col-md-6 form-group floating-label">
-                        <input
-                          type="text"
-                          placeholder=" "
-                          required
-                          id="name"
-                          class="floating-input"
-                          name="fullname"
-                        />
-                        <label>Full Name*</label>
-                      </div>
-                      <div class="col-md-6 form-group floating-label">
-                        <input
-                          type="tel"
-                          placeholder=" "
-                          required
-                          id="mobile_number"
-                          class="floating-input"
-                          name="mobile_number"
-                        />
-                        <label>Mobile Number*</label>
-                      </div>
-                    </div>
-                    <div class="fieldsets row">
-                      <div class="col-md-12 form-group floating-label">
-                        <textarea
-                          placeholder=" "
-                          required
-                          id="description"
-                          class="floating-input"
-                          name="description"
-                        ></textarea>
-                        <label>Tell Us About Your Project*</label>
-                      </div>
-                    </div>
-                    <div class="fieldsets mt20">
-                      <button
-                        type="submit"
-                        name="submit"
-                        class="button separateweb-btn w-100"
-                      >
-                        <span>Submit</span>
-                      </button>
-                    </div>
-                    <p class="trm">
-                      <i class="fas fa-lock"></i> Your privacy is our priority.
-                    </p>
-                  </form>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+      <div class="flex items-center gap-4">
+        <a href="contact.html"
+          class="hidden sm:block bg-primary text-on-primary px-5 py-2 md:px-6 md:py-2.5 rounded-xl font-semibold text-xs md:text-sm hover:scale-105 transition-transform duration-200 active:scale-95 no-underline">
+          GET IN TOUCH
+        </a>
+        <!-- Mobile Menu Toggle -->
+        <button id="menu-toggle" class="md:hidden text-primary p-2 flex items-center justify-center"
+          aria-label="Open Menu">
+          <span class="material-symbols-outlined text-3xl">menu</span>
+        </button>
       </div>
-
-      <div class="separatewebhranimation">
-        <div class="marquee__inner" aria-hidden="true">
-          <ul class="marquee-item-list">
-            <li>Web Development</li>
-            <li>Full Stack Web Development</li>
-            <li>Software Development</li>
-            <li>Web Design and Development</li>
-            <li>Ecommerce Development</li>
-            <li>AI Integration</li>
-            <li>GenAI Solutions</li>
-            <li>Custom Chatbots</li>
-            <li>RAG (Retrieval-Augmented Generation)</li>
-            <li>SEO Optimization</li>
-          </ul>
-        </div>
-      </div>
-
-      <footer class="🌏 pt50 pb40">
-        <div class="container">
-          <div class="row justify-content-between separateweb-footer-wrap">
-            <!-- Contact Section -->
-            <div class="col-lg-4 col-sm-12 pt40">
-              <div class="footerdez-a">
-                <p>
-                  Got a project in mind or just want to say hi? We're always
-                  open to conversations, collaborations, or coffee!
-                </p>
-                <div class="contactinfo mt30">
-                  <a href="mailto:solutionxofficial@gmail.com">
-                    <i class="uil uil-envelope"></i> solutionxofficial@gmail.com
-                    <span>→</span>
-                  </a>
-                  <a href="https://wa.me/923160865324" target="_blank">
-                    <i class="uil uil-whatsapp"></i> +92 316 0865324
-                    <span>→</span>
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            <!-- Footer Links -->
-            <div class="col-lg-7 col-sm-12">
-              <div class="row fttlnks">
-                <!-- Company Links -->
-                <div class="col-lg-4 col-sm-6 col-6 pt40">
-                  <h5>Company</h5>
-                  <ul class="footer-address-list 🔗">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="portfolio.html">Portfolio</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                  </ul>
-                </div>
-
-                <!-- Services -->
-                <div class="col-lg-4 col-sm-6 col-6 pt40">
-                  <h5>Services</h5>
-                  <ul class="footer-address-list 🔗">
-                    <li><a href="services.html">Web & App Development</a></li>
-                    <li><a href="services.html">Ecommerce Solutions</a></li>
-                    <li><a href="services.html">GenAI & Chatbots</a></li>
-                    <li><a href="services.html">Custom Chatbots</a></li>
-                    <li>
-                      <a href="services.html">RAG (AI Retrieval Systems)</a>
-                    </li>
-                  </ul>
-                </div>
-
-                <!-- Social Media -->
-                <div class="col-lg-4 col-sm-6 col-6 pt40">
-                  <h5>Connect with Us</h5>
-                  <ul class="footer-address-list 🔗">
-                    <li>
-                      <a
-                        href="https://www.facebook.com/people/SolutionX/100092121775499/"
-                        target="_blank"
-                        >Facebook</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        href="https://www.instagram.com/solutionxoffical/"
-                        target="_blank"
-                        >Instagram</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        href="https://github.com/SolutionX-Official/"
-                        target="_blank"
-                        >GitHub</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        href="https://www.linkedin.com/company/solutions-x/"
-                        target="_blank"
-                        >LinkedIn</a
-                      >
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Centered Copyright -->
-          <div class="row mt60">
-            <div class="col-12 text-center">
-              <p class="SeparateWeb-rights">
-                © 2025 SolutionX. All rights reserved. | Built with ❤️ and
-                innovation.
-              </p>
-            </div>
-          </div>
-        </div>
-      </footer>
     </div>
+  </nav>
 
-    <!-- Floating Contact Buttons -->
+  <!-- Mobile Sidebar Drawer -->
+  <div id="mobile-menu"
+    class="fixed inset-0 z-[60] bg-primary/95 backdrop-blur-lg transform translate-x-full transition-transform duration-300 md:hidden">
+    <div class="flex flex-col h-full p-8">
+      <div class="flex justify-between items-center mb-16">
+        <span class="text-2xl font-bold text-white font-headline tracking-tighter">SolutionX</span>
+        <button id="menu-close" class="text-white p-2 flex items-center justify-center" aria-label="Close Menu">
+          <span class="material-symbols-outlined text-3xl">close</span>
+        </button>
+      </div>
+      <nav class="flex flex-col gap-6 text-2xl font-bold">
+        <a href="index.html" class="text-white/70 hover:text-white pl-4 no-underline transition-colors">Home</a>
+        <a href="about.html" class="text-white/70 hover:text-white pl-4 no-underline transition-colors">About</a>
+        <a href="services.html" class="text-white/70 hover:text-white pl-4 no-underline transition-colors">Services</a>
+        <a href="portfolio.html"
+          class="text-white/70 hover:text-white pl-4 no-underline transition-colors">Portfolio</a>
+        <a href="contact.html"
+          class="text-tertiary-fixed border-l-4 border-tertiary-fixed pl-4 no-underline">Contact</a>
+      </nav>
+
+      <!-- Mobile Sidebar Tech Stack -->
+      <div class="mt-8 pt-8 border-t border-white/10">
+        <p class="text-white/40 text-[10px] font-bold uppercase tracking-widest mb-4 font-label">Mastery Stack</p>
+        <div class="flex flex-wrap gap-2">
+          <div class="w-8 h-8 rounded bg-white/10 flex items-center justify-center" title="React"><svg
+              viewBox="0 0 100 100" class="w-5 h-5">
+              <circle cx="50" cy="50" r="10" fill="#61DAFB" />
+              <ellipse cx="50" cy="50" rx="40" ry="15" fill="none" stroke="#61DAFB" stroke-width="2" />
+              <ellipse cx="50" cy="50" rx="40" ry="15" fill="none" stroke="#61DAFB" stroke-width="2"
+                transform="rotate(60 50 50)" />
+              <ellipse cx="50" cy="50" rx="40" ry="15" fill="none" stroke="#61DAFB" stroke-width="2"
+                transform="rotate(120 50 50)" />
+            </svg></div>
+          <div class="w-8 h-8 rounded bg-white/10 flex items-center justify-center" title="Next.js"><svg
+              viewBox="0 0 100 100" class="w-5 h-5">
+              <circle cx="50" cy="50" r="48" fill="white" />
+              <path d="M70 30 L35 70 L30 70 L30 30" stroke="black" stroke-width="5" fill="none" />
+              <path d="M70 30 L70 70" stroke="black" stroke-width="5" />
+            </svg></div>
+          <div class="w-8 h-8 rounded bg-white/10 flex items-center justify-center" title="PHP"><svg
+              viewBox="0 0 100 100" class="w-5 h-5">
+              <ellipse cx="50" cy="50" rx="45" ry="25" fill="#4F5B93" /><text x="50" y="58" font-size="25" fill="white"
+                font-weight="bold" text-anchor="middle">PHP</text>
+            </svg></div>
+          <div class="w-8 h-8 rounded bg-white/10 flex items-center justify-center" title="WordPress"><svg
+              viewBox="0 0 100 100" class="w-5 h-5">
+              <circle cx="50" cy="50" r="45" fill="#21759B" /><text x="50" y="65" font-size="50" fill="white"
+                font-weight="bold" text-anchor="middle">W</text>
+            </svg></div>
+          <div class="w-8 h-8 rounded bg-white/10 flex items-center justify-center text-white"><span
+              class="material-symbols-outlined text-sm">visibility</span></div>
+          <div class="w-8 h-8 rounded bg-white/10 flex items-center justify-center text-white"><span
+              class="material-symbols-outlined text-sm">psychology_alt</span></div>
+        </div>
+      </div>
+      <div class="mt-auto pt-12 border-t border-white/10">
+        <p class="text-white/40 text-[10px] font-bold uppercase tracking-widest mb-6 font-label">Global Connectivity</p>
+        <div class="flex flex-col gap-6">
+          <a href="tel:+923160865324" class="flex items-center gap-4 text-white no-underline group">
+            <div
+              class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center group-hover:bg-primary-fixed-dim transition-colors">
+              <span class="material-symbols-outlined text-sm">call</span>
+            </div>
+            <span class="text-sm">+92 316 0865324</span>
+          </a>
+          <a href="https://wa.me/923160865324" target="_blank"
+            class="flex items-center gap-4 text-white no-underline group">
+            <div
+              class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center group-hover:bg-green-500 transition-colors">
+              <span class="material-symbols-outlined text-sm">chat</span>
+            </div>
+            <span class="text-sm">WhatsApp Chat</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const menuToggle = document.getElementById('menu-toggle');
+      const menuClose = document.getElementById('menu-close');
+      const mobileMenu = document.getElementById('mobile-menu');
+      const body = document.body;
+
+      function toggleMenu(open) {
+        if (open) {
+          mobileMenu.classList.remove('translate-x-full');
+          body.style.overflow = 'hidden';
+        } else {
+          mobileMenu.classList.add('translate-x-full');
+          body.style.overflow = '';
+        }
+      }
+
+      menuToggle.addEventListener('click', () => toggleMenu(true));
+      menuClose.addEventListener('click', () => toggleMenu(false));
+
+      mobileMenu.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => toggleMenu(false));
+      });
+    });
+  </script>
+  </nav>
+  <main class="pt-32 pb-20">
+    <div class="max-w-7xl mx-auto px-8">
+      <!-- Hero Header -->
+      <div class="mb-20 max-w-3xl">
+        <span
+          class="font-label text-xs font-bold tracking-[0.2em] text-on-tertiary-container uppercase mb-4 block">Let's
+          Build Together</span>
+        <h1 class="font-headline text-3xl lg:text-6xl font-extrabold text-primary tracking-tight mb-4 leading-[1.1]">Let's Build
+          Your Next <span class="text-on-tertiary-container">Solution</span>.</h1>
+        <p class="text-lg text-secondary leading-relaxed max-w-2xl">Contact us to discuss your Web or GenAI
+          project—we're here to bring your vision to life.</p>
+      </div>
+      <!-- Asymmetric Grid Layout -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+        <!-- Contact Form Section -->
+        <div class="lg:col-span-7 bg-surface-container-lowest p-6 lg:p-12 rounded-xl shadow-sm">
+          <!-- Success Message -->
+          <div id="success-message" class="hidden mb-8 p-6 bg-green-50 border border-green-200 rounded-xl flex items-center gap-4">
+            <span class="material-symbols-outlined text-green-600 text-3xl">check_circle</span>
+            <div>
+              <h3 class="text-green-800 font-bold text-lg">Message Sent Successfully!</h3>
+              <p class="text-green-700">Thank you for reaching out. Our team will contact you shortly.</p>
+            </div>
+          </div>
+          
+          <form id="contact-form" class="space-y-6" action="https://formsubmit.co/solutionxofficial@gmail.com" method="POST">
+            <!-- FormSubmit Configuration -->
+            <input type="hidden" name="_captcha" value="false" />
+            <input type="hidden" name="_template" value="table" />
+            <input type="hidden" name="_subject" value="New Project Inquiry - SolutionX" />
+            <input type="hidden" name="_next" value="https://solutionxsite.com/contact.html?success=true" />
+            <input type="text" name="_honey" style="display:none" />
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div class="space-y-2">
+                <label class="font-label text-sm font-semibold text-primary ml-1">Full Name*</label>
+                <input
+                  class="w-full px-4 py-3 md:px-6 md:py-4 rounded-md bg-surface-container-low border-none focus:ring-2 focus:ring-primary/20 text-on-surface placeholder:text-outline transition-all text-sm md:text-base"
+                  placeholder="Your Full Name" type="text" name="fullname" required />
+              </div>
+              <div class="space-y-2">
+                <label class="font-label text-sm font-semibold text-primary ml-1">Email Address*</label>
+                <input
+                  class="w-full px-4 py-3 md:px-6 md:py-4 rounded-md bg-surface-container-low border-none focus:ring-2 focus:ring-primary/20 text-on-surface placeholder:text-outline transition-all text-sm md:text-base"
+                  placeholder="name@company.com" type="email" name="email" required />
+              </div>
+              <div class="space-y-2">
+                <label class="font-label text-sm font-semibold text-primary ml-1">Mobile Number*</label>
+                <input
+                  class="w-full px-4 py-3 md:px-6 md:py-4 rounded-md bg-surface-container-low border-none focus:ring-2 focus:ring-primary/20 text-on-surface placeholder:text-outline transition-all text-sm md:text-base"
+                  placeholder="+92 3XX XXXXXXX" type="tel" name="mobile_number" required />
+              </div>
+            </div>
+            <div class="space-y-2">
+              <label class="font-label text-sm font-semibold text-primary ml-1">Tell Us About Your Project*</label>
+              <textarea
+                class="w-full px-4 py-3 md:px-6 md:py-4 rounded-md bg-surface-container-low border-none focus:ring-2 focus:ring-primary/20 text-on-surface placeholder:text-outline transition-all resize-none text-sm md:text-base"
+                placeholder="Describe your project goals..." rows="5" name="description" required></textarea>
+            </div>
+            <button
+              class="w-full bg-primary text-on-primary font-headline py-4 md:py-5 rounded-xl font-bold text-base md:text-lg hover:scale-[1.01] active:scale-95 transition-all shadow-lg shadow-primary/10"
+              type="submit">
+              Submit
+            </button>
+            <p class="text-center text-sm text-outline">🔒 Your privacy is our priority.</p>
+          </form>
+        </div>
+        <!-- Info Sidebar -->
+        <div class="lg:col-span-5 space-y-8">
+          <!-- Schedule CTA Card -->
+          <div class="bg-primary p-6 md:p-10 rounded-xl text-on-primary relative overflow-hidden group">
+            <div
+              class="absolute -right-10 -bottom-10 w-40 h-40 bg-on-tertiary-container/20 rounded-full blur-3xl group-hover:scale-150 transition-transform duration-700">
+            </div>
+            <h3 class="font-headline text-xl md:text-2xl font-bold mb-4">Prefer a direct talk?</h3>
+            <p class="text-on-primary/80 mb-8 leading-relaxed text-sm md:text-base">Skip the form and reach out to us directly via WhatsApp
+              or phone.</p>
+            <a class="inline-flex items-center justify-center gap-3 bg-tertiary-fixed-dim text-on-tertiary-fixed px-6 py-3 md:px-8 md:py-4 rounded-xl font-bold hover:gap-5 transition-all no-underline text-sm md:text-base"
+              href="https://wa.me/923160865324" target="_blank">
+              Chat on WhatsApp
+              <span class="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span>
+            </a>
+          </div>
+          <!-- Contact Detail Cards -->
+          <div class="grid grid-cols-1 gap-6">
+            <div
+              class="bg-surface-container-high p-6 md:p-8 rounded-xl flex items-start gap-4 md:gap-6 border border-outline-variant/10">
+              <div class="w-12 h-12 bg-primary-container rounded-lg flex items-center justify-center shrink-0">
+                <span class="material-symbols-outlined text-on-primary-container" data-icon="mail">mail</span>
+              </div>
+              <div class="min-w-0">
+                <h4 class="font-headline font-bold text-primary mb-1">Email Us</h4>
+                <p class="text-secondary text-sm md:text-base break-all">solutionxofficial@gmail.com</p>
+              </div>
+            </div>
+            <div
+              class="bg-surface-container-high p-6 md:p-8 rounded-xl flex items-start gap-4 md:gap-6 border border-outline-variant/10">
+              <div class="w-12 h-12 bg-primary-container rounded-lg flex items-center justify-center shrink-0">
+                <span class="material-symbols-outlined text-on-primary-container" data-icon="call">call</span>
+              </div>
+              <div>
+                <h4 class="font-headline font-bold text-primary mb-1">Call Us</h4>
+                <p class="text-secondary text-sm md:text-base">+92 316 0865324</p>
+              </div>
+            </div>
+            <div
+              class="bg-surface-container-high p-6 md:p-8 rounded-xl flex items-start gap-4 md:gap-6 border border-outline-variant/10">
+              <div class="w-12 h-12 bg-primary-container rounded-lg flex items-center justify-center shrink-0">
+                <span class="material-symbols-outlined text-on-primary-container"
+                  data-icon="location_on">location_on</span>
+              </div>
+              <div>
+                <h4 class="font-headline font-bold text-primary mb-1">Location</h4>
+                <p class="text-secondary text-sm md:text-base">Muzaffarabad, Azad Jammu</p>
+                <p class="text-secondary text-sm md:text-base">and Kashmir, Pakistan</p>
+              </div>
+            </div>
+          </div>
+          <!-- What You'll Get -->
+          <div class="bg-surface-container-lowest p-8 rounded-xl border border-outline-variant/10">
+            <h4 class="font-headline font-bold text-primary mb-4">What You'll Get:</h4>
+            <ul class="space-y-3">
+              <li class="flex items-center gap-3 text-on-surface-variant">
+                <span class="material-symbols-outlined text-tertiary-fixed-dim"
+                  style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                Expert AI & Web Consulting
+              </li>
+              <li class="flex items-center gap-3 text-on-surface-variant">
+                <span class="material-symbols-outlined text-tertiary-fixed-dim"
+                  style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                Tailored Business Solutions
+              </li>
+              <li class="flex items-center gap-3 text-on-surface-variant">
+                <span class="material-symbols-outlined text-tertiary-fixed-dim"
+                  style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                Timely & Scalable Deliverables
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <!-- Footer -->
+  <footer class="bg-slate-50 w-full rounded-t-3xl mt-12">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12 px-8 py-16">
+      <div class="space-y-6">
+        <div class="text-lg font-bold text-blue-950 font-headline">SolutionX</div>
+        <p class="text-slate-500 font-body text-sm leading-relaxed">
+          Empowering global businesses with innovative Web and Generative AI solutions. We transform complex ideas into
+          smart, scalable digital products across the US, Europe, and beyond.
+        </p>
+        <div class="space-y-2">
+          <a href="mailto:solutionxofficial@gmail.com"
+            class="text-slate-500 hover:text-blue-600 text-sm flex items-center gap-2 transition-all no-underline break-all">
+            <span class="material-symbols-outlined text-sm">mail</span>
+            solutionxofficial@gmail.com
+          </a>
+          <a href="https://wa.me/923160865324" target="_blank"
+            class="text-slate-500 hover:text-blue-600 text-sm flex items-center gap-2 transition-all no-underline">
+            <span class="material-symbols-outlined text-sm">chat</span>
+            +92 316 0865324
+          </a>
+        </div>
+        <div class="flex gap-4">
+          <a class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center hover:bg-primary-fixed transition-colors"
+            href="https://www.facebook.com/people/SolutionX/100092121775499/" target="_blank" title="Facebook">
+            <span class="material-symbols-outlined text-sm text-slate-600">public</span>
+          </a>
+          <a class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center hover:bg-primary-fixed transition-colors"
+            href="https://www.instagram.com/solutionxoffical/" target="_blank" title="Instagram">
+            <span class="material-symbols-outlined text-sm text-slate-600">photo_camera</span>
+          </a>
+          <a class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center hover:bg-primary-fixed transition-colors"
+            href="https://github.com/SolutionX-Official/" target="_blank" title="GitHub">
+            <span class="material-symbols-outlined text-sm text-slate-600">code</span>
+          </a>
+          <a class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center hover:bg-primary-fixed transition-colors"
+            href="https://www.linkedin.com/company/solutions-x/" target="_blank" title="LinkedIn">
+            <span class="material-symbols-outlined text-sm text-slate-600">business_center</span>
+          </a>
+        </div>
+      </div>
+      <div>
+        <h6 class="font-bold text-primary mb-6">Company</h6>
+        <ul class="space-y-4 text-slate-500 text-sm">
+          <li><a class="hover:text-blue-600 hover:underline underline-offset-4 transition-all"
+              href="index.html">Home</a></li>
+          <li><a class="hover:text-blue-600 hover:underline underline-offset-4 transition-all" href="about.html">About
+              Us</a></li>
+          <li><a class="hover:text-blue-600 hover:underline underline-offset-4 transition-all"
+              href="services.html">Services</a></li>
+          <li><a class="hover:text-blue-600 hover:underline underline-offset-4 transition-all"
+              href="portfolio.html">Portfolio</a></li>
+          <li><a class="hover:text-blue-600 hover:underline underline-offset-4 transition-all"
+              href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h6 class="font-bold text-primary mb-6">Services</h6>
+        <ul class="space-y-4 text-slate-500 text-sm">
+          <li><a class="hover:text-blue-600 hover:underline underline-offset-4 transition-all" href="services.html">Web
+              & App Development</a></li>
+          <li><a class="hover:text-blue-600 hover:underline underline-offset-4 transition-all"
+              href="services.html">GenAI Business Automation</a></li>
+          <li><a class="hover:text-blue-600 hover:underline underline-offset-4 transition-all"
+              href="services.html">Custom AI Chatbots</a></li>
+          <li><a class="hover:text-blue-600 hover:underline underline-offset-4 transition-all" href="services.html">RAG
+              & Knowledge Systems</a></li>
+        </ul>
+      </div>
+      <div>
+        <h6 class="font-bold text-primary mb-6">Mastery Stack</h6>
+        <div class="grid grid-cols-4 gap-4">
+          <!-- Icons for Tech -->
+          <div class="flex flex-col items-center gap-1 group" title="React.js / Native">
+            <div
+              class="w-10 h-10 rounded-lg bg-white flex items-center justify-center shadow-sm border border-slate-100 group-hover:scale-110 transition-transform">
+              <svg viewBox="0 0 100 100" class="w-6 h-6">
+                <circle cx="50" cy="50" r="10" fill="#61DAFB" />
+                <ellipse cx="50" cy="50" rx="40" ry="15" fill="none" stroke="#61DAFB" stroke-width="2" />
+                <ellipse cx="50" cy="50" rx="40" ry="15" fill="none" stroke="#61DAFB" stroke-width="2"
+                  transform="rotate(60 50 50)" />
+                <ellipse cx="50" cy="50" rx="40" ry="15" fill="none" stroke="#61DAFB" stroke-width="2"
+                  transform="rotate(120 50 50)" />
+              </svg>
+            </div>
+            <span class="text-[8px] font-bold text-slate-400">React</span>
+          </div>
+          <div class="flex flex-col items-center gap-1 group" title="Next.js">
+            <div
+              class="w-10 h-10 rounded-lg bg-white flex items-center justify-center shadow-sm border border-slate-100 group-hover:scale-110 transition-transform">
+              <svg viewBox="0 0 100 100" class="w-6 h-6">
+                <circle cx="50" cy="50" r="48" fill="black" />
+                <path d="M70 30 L35 70 L30 70 L30 30" stroke="white" stroke-width="5" fill="none" />
+                <path d="M70 30 L70 70" stroke="white" stroke-width="5" />
+              </svg>
+            </div>
+            <span class="text-[8px] font-bold text-slate-400">Next.js</span>
+          </div>
+          <div class="flex flex-col items-center gap-1 group" title="Node.js">
+            <div
+              class="w-10 h-10 rounded-lg bg-white flex items-center justify-center shadow-sm border border-slate-100 group-hover:scale-110 transition-transform">
+              <svg viewBox="0 0 100 100" class="w-6 h-6">
+                <path fill="#339933"
+                  d="M85,30l-30-17.3c-3.1-1.8-6.9-1.8-10,0L15,30c-3.1,1.8-5,5.1-5,8.7v34.7c0,3.6,1.9,6.9,5,8.7l30,17.3c3.1,1.8,6.9,1.8,10,0l30-17.3c3.1-1.8,5-5.1,5-8.7V38.7C90,35.1,88.1,31.8,85,30z" />
+              </svg>
+            </div>
+            <span class="text-[8px] font-bold text-slate-400">Node</span>
+          </div>
+          <div class="flex flex-col items-center gap-1 group" title="PHP CI4">
+            <div
+              class="w-10 h-10 rounded-lg bg-white flex items-center justify-center shadow-sm border border-slate-100 group-hover:scale-110 transition-transform">
+              <svg viewBox="0 0 100 100" class="w-6 h-6">
+                <ellipse cx="50" cy="50" rx="45" ry="25" fill="#4F5B93" /><text x="50" y="58" font-size="25"
+                  fill="white" font-weight="bold" text-anchor="middle">PHP</text>
+              </svg>
+            </div>
+            <span class="text-[8px] font-bold text-slate-400">PHP/CI4</span>
+          </div>
+          <div class="flex flex-col items-center gap-1 group" title="WordPress">
+            <div
+              class="w-10 h-10 rounded-lg bg-white flex items-center justify-center shadow-sm border border-slate-100 group-hover:scale-110 transition-transform">
+              <svg viewBox="0 0 100 100" class="w-6 h-6">
+                <circle cx="50" cy="50" r="45" fill="#21759B" /><text x="50" y="65" font-size="50" fill="white"
+                  font-weight="bold" text-anchor="middle">W</text>
+              </svg>
+            </div>
+            <span class="text-[8px] font-bold text-slate-400">WP</span>
+          </div>
+          <div class="flex flex-col items-center gap-1 group" title="Python">
+            <div
+              class="w-10 h-10 rounded-lg bg-white flex items-center justify-center shadow-sm border border-slate-100 group-hover:scale-110 transition-transform">
+              <svg viewBox="0 0 100 100" class="w-6 h-6">
+                <path fill="#3776AB"
+                  d="M50,10c-15,0-14,6-14,6V22h14v2h-20c-8,0-14,6-14,14v10c0,8,6,14,14,14h6v-8c0-8,6-14,14-14h14v-6c0-6-6-14-14-14H50z" />
+                <path fill="#FFD43B"
+                  d="M50,90c15,0,14-6,14-6V78H50v-2h20c8,0,14-6,14-14V52c0-8-6-14-14-14h-6v8c0,8-6,14-14,14H36v6c0,6,6,14,14,14H50z" />
+              </svg>
+            </div>
+            <span class="text-[8px] font-bold text-slate-400">Python</span>
+          </div>
+          <div class="flex flex-col items-center gap-1 group" title="Computer Vision">
+            <div
+              class="w-10 h-10 rounded-lg bg-white flex items-center justify-center shadow-sm border border-slate-100 group-hover:scale-110 transition-transform">
+              <span class="material-symbols-outlined text-primary text-xl">visibility</span>
+            </div>
+            <span class="text-[8px] font-bold text-slate-400">CV/AI</span>
+          </div>
+          <div class="flex flex-col items-center gap-1 group" title="NLP & RAG">
+            <div
+              class="w-10 h-10 rounded-lg bg-white flex items-center justify-center shadow-sm border border-slate-100 group-hover:scale-110 transition-transform">
+              <span class="material-symbols-outlined text-primary text-xl">psychology_alt</span>
+            </div>
+            <span class="text-[8px] font-bold text-slate-400">NLP/RAG</span>
+          </div>
+        </div>
+      </div>
+    </div>
     <div
-      class="d-flex flex-column align-items-center"
-      style="
-        position: fixed;
-        bottom: 20px;
-        right: 20px;
-        z-index: 1000;
-        gap: 15px;
-      "
-    >
-      <!-- Phone -->
-      <a
-        href="tel:+923160865324"
-        class="btn contact-fab"
-        title="Call Us"
-        style="background-color: #2b5b9e"
-      >
-        <i class="uil uil-phone"></i>
-      </a>
-
-      <!-- WhatsApp -->
-      <a
-        href="https://wa.me/923160865324"
-        target="_blank"
-        class="btn contact-fab"
-        title="Chat on WhatsApp"
-        style="background-color: #25d366"
-      >
-        <i class="uil uil-whatsapp"></i>
-      </a>
-
-      <!-- Email -->
-      <a
-        href="mailto:solutionxofficial@gmail.com"
-        class="btn contact-fab"
-        title="Email Us"
-        style="background-color: #2b5b9e"
-      >
-        <i class="uil uil-envelope"></i>
-      </a>
+      class="max-w-7xl mx-auto px-8 pb-8 border-t border-slate-200 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+      <p class="text-slate-400 text-xs">
+        © 2025 SolutionX. All rights reserved. | Delivering Innovation Globally.
+      </p>
+      <div class="flex gap-6">
+        <a href="contact.html" class="text-slate-400 text-xs hover:text-primary transition-colors">Privacy Policy</a>
+        <a href="contact.html" class="text-slate-400 text-xs hover:text-primary transition-colors">Terms of Service</a>
+      </div>
     </div>
-
-    <!-- Styles -->
-    <style>
-      .contact-fab {
-        width: 60px;
-        height: 60px;
-        border-radius: 50%;
-        color: white;
-        font-size: 24px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-        transition: all 0.3s ease;
-        text-decoration: none;
+  </footer>
+  <!-- Floating Contact Buttons -->
+  <div class="fixed bottom-5 right-5 z-50 flex flex-col gap-3">
+    <a href="tel:+923160865324"
+      class="w-12 h-12 md:w-14 md:h-14 rounded-full bg-blue-900 text-white flex items-center justify-center shadow-lg hover:scale-110 transition-transform no-underline"
+      title="Call Us"><span class="material-symbols-outlined text-xl md:text-2xl">call</span></a>
+    <a href="https://wa.me/923160865324" target="_blank"
+      class="w-12 h-12 md:w-14 md:h-14 rounded-full bg-green-500 text-white flex items-center justify-center shadow-lg hover:scale-110 transition-transform no-underline"
+      title="WhatsApp"><span class="material-symbols-outlined text-xl md:text-2xl">chat</span></a>
+    <a href="mailto:solutionxofficial@gmail.com"
+      class="w-12 h-12 md:w-14 md:h-14 rounded-full bg-blue-900 text-white flex items-center justify-center shadow-lg hover:scale-110 transition-transform no-underline"
+      title="Email Us"><span class="material-symbols-outlined text-xl md:text-2xl">mail</span></a>
+  </div>
+  <script>
+    // Handle FormSubmit Success Redirect
+    window.addEventListener('DOMContentLoaded', () => {
+      const urlParams = new URLSearchParams(window.location.search);
+      if (urlParams.has('success')) {
+        document.getElementById('success-message').classList.remove('hidden');
+        document.getElementById('contact-form').classList.add('hidden');
+        // Scroll to success message
+        document.getElementById('success-message').scrollIntoView({ behavior: 'smooth', block: 'center' });
       }
+    });
+  </script>
+</body>
 
-      .contact-fab:hover {
-        transform: scale(1.1);
-        filter: brightness(0.9);
-      }
-    </style>
-
-    <script src="js/modernizr-3.5.0.min.js"></script>
-    <script src="js/jquery-3.6.0.min.js"></script>
-    <script src="js/sw.bundle.js"></script>
-    <script src="js/separateweb.min.js"></script>
-    <script src="js/jquery.validate.min.js"></script>
-    <script src="js/sweetalert2.all.min.js"></script>
-    <script src="js/separate.validation.js"></script>
-    <script src="js/main.js"></script>
-    <script src="js/contact-form.js"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
-  </body>
 </html>
