@@ -1,783 +1,1068 @@
-<!DOCTYPE html>
-<html lang="en" class="no-js">
+<!doctype html>
+
+<html class="light" lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>SolutionX - Web & GenAI Solutions</title>
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="theme-color" content="#ffffff" />
-    <link href="images/favicon.png" rel="icon" />
-    <link rel="prerender" href="index.html" />
-
-    <meta name="page-topic" content="Web Development & GenAI Solutions" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>SolutionX - Global Web, Mobile & AI Innovation Agency</title>
+    <meta name="description" content="SolutionX is a global agency specializing in PHP CI4, WordPress, React Native, and Generative AI (CV, NLP). We build intelligent, scalable digital products for the world." />
+    <meta name="keywords" content="PHP CI4 Development, WordPress Plugins, React Native Apps, Computer Vision, NLP, GenAI Solutions, Global Tech Agency, SolutionX" />
     <meta name="author" content="SolutionX Team" />
-    <meta
-      name="description"
-      content="SolutionX provides innovative Web Development and GenAI-powered solutions to help businesses grow and solve real-world challenges;"
-    />
-    <meta
-      name="keywords"
-      content="Web Development, AI Solutions, GenAI, Software Development, Business Automation, UI/UX Design"
-    />
-
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:site" content="@solutionx" />
-    <meta
-      name="twitter:title"
-      content="SolutionX - Web & AI Solutions for Businesses"
-    />
-    <meta name="twitter:url" content="index.html" />
-    <meta
-      name="twitter:description"
-      content="We craft innovative web solutions and AI-powered applications for startups and enterprises. Get in touch to transform your ideas into reality;"
-    />
-    <meta name="twitter:image" content="images/meta-cover.jpg" />
-
-    <meta property="og:locale" content="en_US" />
-    <meta property="og:url" content="index.html" />
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="SolutionX - Web & AI Solutions" />
-    <meta
-      property="og:description"
-      content="Empowering businesses with cutting-edge Web and AI solutions;"
-    />
-    <meta property="og:image" content="images/meta-cover.jpg" />
-    <meta property="og:image:secure_url" content="images/meta-cover.jpg" />
-    <meta property="og:image:width" content="900" />
-    <meta property="og:image:height" content="570" />
-    <meta property="og:site_name" content="SolutionX" />
-
-    <meta name="robots" content="index, follow" />
-    <meta name="Googlebot" content="index, follow" />
-    <meta name="rating" content="general" />
-    <meta name="distribution" content="global" />
-    <link rel="canonical" href="index.html" />
-
-    <link href="css/bootstrap.min.css" rel="stylesheet" />
-    <link href="css/plugin.min.css" rel="stylesheet" />
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <!-- Google Fonts -->
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Be+Vietnam+Pro:wght@300;400;500;600&amp;display=swap"
       rel="stylesheet"
     />
-    <!-- Unicons CDN -->
+    <!-- Material Symbols -->
     <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
       rel="stylesheet"
-      href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
     />
-    <!-- Bootstrap CSS (since you're using data-bs attributes) -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384+QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
-    <link href="css/style.css" rel="stylesheet" />
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              surface: "#f7f9fb",
+              "outline-variant": "#c4c6d1",
+              "surface-bright": "#f7f9fb",
+              "tertiary-fixed": "#7df4ff",
+              "on-secondary-fixed": "#001b3d",
+              error: "#ba1a1a",
+              "on-tertiary": "#ffffff",
+              tertiary: "#001d20",
+              secondary: "#495f84",
+              "on-primary": "#ffffff",
+              "secondary-fixed-dim": "#b1c7f2",
+              "surface-dim": "#d8dadc",
+              "tertiary-container": "#003438",
+              "inverse-surface": "#2d3133",
+              "surface-variant": "#e0e3e5",
+              "error-container": "#ffdad6",
+              "secondary-container": "#bcd2fe",
+              "inverse-primary": "#b8c3ff",
+              "surface-container": "#eceef0",
+              "primary-container": "#002283",
+              "on-secondary": "#ffffff",
+              "on-surface-variant": "#43474f",
+              "on-tertiary-container": "#00a6b0",
+              "on-primary-container": "#758eff",
+              "secondary-fixed": "#d6e3ff",
+              "surface-container-lowest": "#ffffff",
+              "on-tertiary-fixed-variant": "#004f54",
+              "on-error": "#ffffff",
+              "surface-container-highest": "#e0e3e5",
+              "on-error-container": "#93000a",
+              "primary-fixed": "#dde1ff",
+              "surface-container-high": "#e6e8ea",
+              primary: "#001151",
+              "primary-fixed-dim": "#b8c3ff",
+              "on-background": "#191c1e",
+              "on-secondary-fixed-variant": "#31476b",
+              "on-secondary-container": "#445a7f",
+              outline: "#747781",
+              "on-primary-fixed-variant": "#0035be",
+              "inverse-on-surface": "#eff1f3",
+              "surface-tint": "#124af0",
+              "on-primary-fixed": "#001356",
+              "on-surface": "#191c1e",
+              "tertiary-fixed-dim": "#00dbe9",
+              "on-tertiary-fixed": "#002022",
+              background: "#f7f9fb",
+              "surface-container-low": "#f2f4f6",
+            },
+            borderRadius: {
+              DEFAULT: "1rem",
+              lg: "2rem",
+              xl: "3rem",
+              full: "9999px",
+            },
+            fontFamily: {
+              headline: ["Plus Jakarta Sans"],
+              body: ["Be Vietnam Pro"],
+              label: ["Be Vietnam Pro"],
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      .material-symbols-outlined {
+        font-variation-settings:
+          "FILL" 0,
+          "wght" 400,
+          "GRAD" 0,
+          "opsz" 24;
+      }
+      .glass-nav {
+        background: rgba(255, 255, 255, 0.8);
+        backdrop-filter: blur(24px);
+        -webkit-backdrop-filter: blur(24px);
+      }
+      .hero-gradient {
+        background: linear-gradient(135deg, #001151 0%, #002283 100%);
+      }
+    </style>
   </head>
+  <body
+    class="bg-surface text-on-surface font-body selection:bg-primary-fixed selection:text-on-primary-fixed"
+  >
+    <!-- TopNavBar -->
+    <nav class="fixed top-0 w-full z-50 glass-nav shadow-sm">
+      <div
+        class="max-w-7xl mx-auto flex justify-between items-center px-8 py-4"
+      >
+        <a href="index.html" class="text-xl font-bold tracking-tighter text-blue-950 font-headline no-underline">
+          SolutionX
+        </a>
+        <div class="hidden md:flex items-center gap-8">
+          <a
+            class="text-blue-700 font-semibold border-b-2 border-blue-700 pb-1 font-headline text-sm tracking-wide"
+            href="index.html"
+            >Home</a
+          >
+          <a
+            class="text-slate-600 hover:text-blue-900 transition-colors font-headline text-sm tracking-wide"
+            href="about.html"
+            >About</a
+          >
+          <a
+            class="text-slate-600 hover:text-blue-900 transition-colors font-headline text-sm tracking-wide"
+            href="services.html"
+            >Services</a
+          >
+          <a
+            class="text-slate-600 hover:text-blue-900 transition-colors font-headline text-sm tracking-wide"
+            href="portfolio.html"
+            >Portfolio</a
+          >
+        </div>
+        <div class="flex items-center gap-4">
+          <a
+            href="contact.html"
+            class="hidden sm:block bg-primary text-on-primary px-5 py-2 md:px-6 md:py-2.5 rounded-xl font-semibold text-xs md:text-sm hover:scale-105 transition-transform duration-200 active:scale-95 no-underline"
+          >
+            GET IN TOUCH
+          </a>
+          <!-- Mobile Menu Toggle -->
+          <button id="menu-toggle" class="md:hidden text-primary p-2 flex items-center justify-center" aria-label="Open Menu">
+            <span class="material-symbols-outlined text-3xl">menu</span>
+          </button>
+        </div>
+      </div>
+    </nav>
 
-  <body>
-    <div class="bg"></div>
-    <header class="separateweb-header fixed-top">
-      <div class="container-fluid separatewebmobileheader">
-        <div class="menu-header">
-          <div class="menu-logo">
-            <div class="dskt-logo">
-              <a class="nav-brand" href="index.html">
-                <img
-                  src="images/logo.png"
-                  alt="SolutionX Logo"
-                  style="font-weight: 900"
-                  class="swtextanimate"
-                />
+    <!-- Mobile Sidebar Drawer -->
+    <div id="mobile-menu" class="fixed inset-0 z-[60] bg-primary/95 backdrop-blur-lg transform translate-x-full transition-transform duration-300 md:hidden">
+      <div class="flex flex-col h-full p-8">
+        <div class="flex justify-between items-center mb-16">
+          <span class="text-2xl font-bold text-white font-headline tracking-tighter">SolutionX</span>
+          <button id="menu-close" class="text-white p-2 flex items-center justify-center" aria-label="Close Menu">
+            <span class="material-symbols-outlined text-3xl">close</span>
+          </button>
+        </div>
+        <nav class="flex flex-col gap-6 text-2xl font-bold">
+          <a href="index.html" class="text-tertiary-fixed border-l-4 border-tertiary-fixed pl-4 no-underline">Home</a>
+          <a href="about.html" class="text-white/70 hover:text-white pl-4 no-underline transition-colors">About</a>
+          <a href="services.html" class="text-white/70 hover:text-white pl-4 no-underline transition-colors">Services</a>
+          <a href="portfolio.html" class="text-white/70 hover:text-white pl-4 no-underline transition-colors">Portfolio</a>
+          <a href="contact.html" class="text-white/70 hover:text-white pl-4 no-underline transition-colors">Contact</a>
+        </nav>
+        
+        <!-- Mobile Sidebar Tech Stack -->
+        <div class="mt-8 pt-8 border-t border-white/10">
+          <p class="text-white/40 text-[10px] font-bold uppercase tracking-widest mb-4 font-label">Mastery Stack</p>
+          <div class="flex flex-wrap gap-2">
+            <div class="w-8 h-8 rounded bg-white/10 flex items-center justify-center" title="React"><svg viewBox="0 0 100 100" class="w-5 h-5"><circle cx="50" cy="50" r="10" fill="#61DAFB"/><ellipse cx="50" cy="50" rx="40" ry="15" fill="none" stroke="#61DAFB" stroke-width="2"/><ellipse cx="50" cy="50" rx="40" ry="15" fill="none" stroke="#61DAFB" stroke-width="2" transform="rotate(60 50 50)"/><ellipse cx="50" cy="50" rx="40" ry="15" fill="none" stroke="#61DAFB" stroke-width="2" transform="rotate(120 50 50)"/></svg></div>
+            <div class="w-8 h-8 rounded bg-white/10 flex items-center justify-center" title="Next.js"><svg viewBox="0 0 100 100" class="w-5 h-5"><circle cx="50" cy="50" r="48" fill="white"/><path d="M70 30 L35 70 L30 70 L30 30" stroke="black" stroke-width="5" fill="none"/><path d="M70 30 L70 70" stroke="black" stroke-width="5"/></svg></div>
+            <div class="w-8 h-8 rounded bg-white/10 flex items-center justify-center" title="PHP"><svg viewBox="0 0 100 100" class="w-5 h-5"><ellipse cx="50" cy="50" rx="45" ry="25" fill="#4F5B93"/><text x="50" y="58" font-size="25" fill="white" font-weight="bold" text-anchor="middle">PHP</text></svg></div>
+            <div class="w-8 h-8 rounded bg-white/10 flex items-center justify-center" title="WordPress"><svg viewBox="0 0 100 100" class="w-5 h-5"><circle cx="50" cy="50" r="45" fill="#21759B"/><text x="50" y="65" font-size="50" fill="white" font-weight="bold" text-anchor="middle">W</text></svg></div>
+            <div class="w-8 h-8 rounded bg-white/10 flex items-center justify-center text-white"><span class="material-symbols-outlined text-sm">visibility</span></div>
+            <div class="w-8 h-8 rounded bg-white/10 flex items-center justify-center text-white"><span class="material-symbols-outlined text-sm">psychology_alt</span></div>
+          </div>
+        </div>
+        <div class="mt-auto pt-12 border-t border-white/10">
+          <p class="text-white/40 text-[10px] font-bold uppercase tracking-widest mb-6 font-label">Global Connectivity</p>
+          <div class="flex flex-col gap-6">
+            <a href="tel:+923160865324" class="flex items-center gap-4 text-white no-underline group">
+              <div class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center group-hover:bg-primary-fixed-dim transition-colors">
+                <span class="material-symbols-outlined text-sm">call</span>
+              </div>
+              <span class="text-sm">+92 316 0865324</span>
+            </a>
+            <a href="https://wa.me/923160865324" target="_blank" class="flex items-center gap-4 text-white no-underline group">
+              <div class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center group-hover:bg-green-500 transition-colors">
+                <span class="material-symbols-outlined text-sm">chat</span>
+              </div>
+              <span class="text-sm">WhatsApp Chat</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const menuToggle = document.getElementById('menu-toggle');
+        const menuClose = document.getElementById('menu-close');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const body = document.body;
+
+        function toggleMenu(open) {
+          if (open) {
+            mobileMenu.classList.remove('translate-x-full');
+            body.style.overflow = 'hidden';
+          } else {
+            mobileMenu.classList.add('translate-x-full');
+            body.style.overflow = '';
+          }
+        }
+
+        menuToggle.addEventListener('click', () => toggleMenu(true));
+        menuClose.addEventListener('click', () => toggleMenu(false));
+
+        // Close menu on link click
+        mobileMenu.querySelectorAll('a').forEach(link => {
+          link.addEventListener('click', () => toggleMenu(false));
+        });
+      });
+    </script>
+    <main class="pt-24">
+      <!-- Hero Section -->
+      <section class="relative px-6 py-16 lg:py-24 overflow-hidden">
+        <div class="max-w-7xl mx-auto grid lg:grid-cols-12 gap-12 items-center">
+          <div class="lg:col-span-7 z-10">
+            <span
+              class="inline-block py-1 px-4 rounded-full bg-primary-fixed text-on-primary-fixed text-xs font-bold tracking-widest uppercase mb-6 font-label"
+              >Web & GenAI Solutions</span
+            >
+            <h1
+              class="text-3xl lg:text-6xl font-extrabold font-headline leading-[1.1] tracking-tight text-primary mb-6"
+            >
+              Transforming Ideas into Reality with
+              <span
+                class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-tertiary-fixed-dim"
+                >Web, Mobile & GenAI</span
+              >
+              Solutions
+            </h1>
+            <p
+              class="text-xl text-on-surface-variant leading-relaxed max-w-2xl mb-10 font-light"
+            >
+              At SolutionX, we combine cutting-edge web development with
+              advanced Generative AI to build smart, scalable, and
+              future-proof solutions that enhance user experiences and
+              streamline business operations.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4">
+              <a
+                href="contact.html"
+                class="bg-primary text-on-primary px-5 py-2.5 md:px-8 md:py-4 rounded-xl font-bold text-base md:text-lg flex items-center justify-center gap-2 hover:scale-105 transition-all shadow-lg no-underline"
+              >
+                Get a Solution
+                <span
+                  class="material-symbols-outlined"
+                  data-icon="arrow_forward"
+                  >arrow_forward</span
+                >
+              </a>
+              <a
+                href="services.html"
+                class="bg-surface-container-high text-primary px-5 py-2.5 md:px-8 md:py-4 rounded-xl font-bold text-base md:text-lg hover:bg-surface-bright transition-all no-underline text-center"
+              >
+                Explore Our Services
               </a>
             </div>
           </div>
-          <div class="separateweb-nav" role="navigation">
-            <ul class="separateweb-list">
-              <li><a href="index.html" class="sw-links">Home</a></li>
-              <li><a href="about.html" class="sw-links">About</a></li>
-              <li><a href="services.html" class="sw-links">Services</a></li>
-              <li><a href="portfolio.html" class="sw-links">Portfolio</a></li>
-            </ul>
-          </div>
-          <div class="separateweb-nav-cta">
-            <ul class="sw-menu-sw-set">
-              <li>
-                <a
-                  href="contact.html"
-                  class="port-links separateweb-btn swheader"
-                >
-                  <span class="swdkttxt">GET IN TOUCH</span>
-                  <i class="uil uil-envelope"></i>
-                </a>
-              </li>
-              <li>
-                <button
-                  class="separateweb-menu separateweb-m"
-                  type="button"
-                  data-bs-toggle="offcanvas"
-                  data-bs-target="#demo"
-                >
-                  <i class="uil uil-bars"></i>
-                </button>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="mobilenav">
-          <div class="offcanvas offcanvas-start" id="demo">
-            <div class="offcanvas-header">
-              <div class="separteweblogo">
-                <img src="images/mobile-logo.png" alt="SolutionX Logo" />
-              </div>
-              <button
-                type="button"
-                class="btn-close"
-                data-bs-dismiss="offcanvas"
-              ></button>
-            </div>
-            <div class="offcanvas-body">
-              <p class="swmenulabl">Menu</p>
-              <ul class="separateweb-m-list">
-                <li>
-                  <a href="index.html"><i class="uil uil-estate"></i> Home</a>
-                </li>
-                <li>
-                  <a href="about.html"
-                    ><i class="uil uil-user-square"></i> About</a
-                  >
-                </li>
-                <li>
-                  <a href="services.html"
-                    ><i class="uil uil-setting"></i> Services</a
-                  >
-                </li>
-                <li>
-                  <a href="portfolio.html"
-                    ><i class="uil uil-briefcase-alt"></i> Portfolio</a
-                  >
-                </li>
-              </ul>
-              <p class="swmenulabl mt40">Connect with Us</p>
-              <ul class="separateweb-m-list">
-                <li>
-                  <a
-                    href="https://www.linkedin.com/company/solutionx"
-                    target="_blank"
-                    ><i class="uil uil-linkedin-alt"></i> LinkedIn</a
-                  >
-                </li>
-                <li>
-                  <a href="https://github.com/solutionx" target="_blank"
-                    ><i class="uil uil-github"></i> GitHub</a
-                  >
-                </li>
-                <li>
-                  <a href="https://x.com/solutionx" target="_blank"
-                    ><i class="uil uil-twitter-alt"></i> X (Twitter)</a
-                  >
-                </li>
-                <li>
-                  <a href="https://www.instagram.com/solutionx" target="_blank"
-                    ><i class="uil uil-instagram"></i> Instagram</a
-                  >
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </header>
-
-    <div id="separateweb-content">
-      <section class="home-hero-a">
-        <div class="container">
-          <div class="row justify-content-between vcenter">
-            <div class="col-lg-6 separateweb swheadertext">
-              <div class="hero-content-a">
-                <h1 class="h1 mb20">
-                  Transforming Ideas into Reality with
-                  <span class="swtextanimate"> Web & GenAI Solutions</span>
-                  for Innovation and Growth.
-                </h1>
-                <p>
-                  At SolutionX, we combine cutting-edge web development with
-                  advanced Generative AI to build smart, scalable, and
-                  future-proof solutions that enhance user experiences and
-                  streamline business operations.
-                </p>
-              </div>
-            </div>
-            <div class="col-lg-6 position-relative">
-              <div class="separateweb-btn-sw herobtn mt40">
-                <a href="contact.html" class="button button--sw2 mt40"
-                  ><span>Get a Solution</span></a
-                >
-              </div>
-              <div class="separateweb-image rounddiv">
-                <img
-                  src="images/team-ai-web.png"
-                  alt="SolutionX AI"
-                  class="img-fluid"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="separateweb-services pb50">
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-lg-12">
-              <div class="sec-heading text-center">
-                <h2 class="lighttext">
-                  Explore <span class="swtextanimate">AI & Web</span> Solutions
-                  We Offer
-                </h2>
-              </div>
-            </div>
-          </div>
-          <div class="row mt30">
-            <div class="col-lg-12 col-sm-12">
-              <div class="separateweb-wrap">
-                <nav class="menu">
-                  <div class="menu__item">
-                    <a class="menu__item-link" href="services.html"
-                      >AI-Powered Web Apps</a
-                    >
-                    <div class="marquee">
-                      <div class="marquee__inner-separateweb">
-                        <div class="marquee__inner" aria-hidden="true">
-                          <span>AI Chatbots</span>
-                          <span>Personalized User Experiences</span>
-                          <span>Automated Content Generation</span>
-                          <span>Data-Driven Dashboards</span>
-                          <span>Smart Web Assistants</span>
-                          <span>Predictive Analytics</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="menu__item">
-                    <a class="menu__item-link" href="services.html"
-                      >Custom Web Development</a
-                    >
-                    <div class="marquee">
-                      <div class="marquee__inner-separateweb">
-                        <div class="marquee__inner" aria-hidden="true">
-                          <span>Responsive UI/UX</span>
-                          <span>Full-Stack Development</span>
-                          <span>E-Commerce Solutions</span>
-                          <span>Cloud-Based Platforms</span>
-                          <span>API Integrations</span>
-                          <span>Performance Optimization</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </nav>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="home-about pt100 pb100 ofh">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-5 position-relative">
-              <h2 class="mb25 spitxt">
-                Smart Web & AI Solutions Tailored for Your Business Success.
-              </h2>
-            </div>
-            <div class="col-lg-7">
-              <div class="about-content-home m-mb60">
-                <p>
-                  At SolutionX, we deliver innovative web development and
-                  GenAI-driven solutions that revolutionize businesses. From
-                  AI-powered chatbots to dynamic websites, we build intelligent
-                  digital products that enhance user engagement and streamline
-                  workflows.
-                </p>
-                <p class="mt10">
-                  Our expertise spans across technologies like React.js,
-                  Node.js, Flask, Python, and AI models such as GPT and
-                  LLM-based automation.
-                </p>
-                <p class="mt10">
-                  We specialize in integrating AI-powered automation into web
-                  solutions, ensuring businesses stay ahead in the digital era.
-                </p>
-                <p class="mt10">
-                  Let’s create something smart together!
-                  <a href="contact.html" class="swtextanimate">Get in touch</a>
-                  to explore AI-driven possibilities for your business.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="pt100 pb100">
-        <div class="container">
-          <div class="cta-block-a ctablock">
-            <div class="row justify-content-between">
-              <div class="col-lg-6 vcenter">
-                <div class="cta-heading">
-                  <h2 class="mb15">
-                    Let's <span class="swtextanimate">Innovate</span> Together
-                  </h2>
-                  <p>
-                    Ready to integrate AI into your business? Our expert team at
-                    SolutionX is here to build the next-gen solution for you.
-                  </p>
-                  <a
-                    href="contact.html"
-                    class="port-links separateweb-btn mt40"
-                  >
-                    <span
-                      >Talk to Our AI & Web Experts
-                      <i class="uil uil-arrow-up-right"></i
-                    ></span>
-                  </a>
-                </div>
-              </div>
-              <div class="col-lg-5 vcenter">
-                <div class="ct-sol-img sw-mmt30">
-                  <img
-                    src="images/genai-web-solutions.png"
-                    alt="AI & Web Services"
-                    class="img-fluid"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="pt80 pb80">
-        <div class="container">
-          <div class="row justify-content-center text-center">
-            <div class="col-xxl-6 col-lg-8 vcenter">
-              <div class="cta-heading">
-                <h2 class="mb20">
-                  Why choose <span class="swtextanimate">SolutionX?</span>
-                </h2>
-                <p>
-                  You’ve made it this far, so let’s give you 3 solid reasons why
-                  SolutionX is the right choice for your Web & GenAI needs.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="row justify-content-between mt40 gap50">
-            <div class="col-lg-6 mt30">
-              <div class="sw-cta-quote shadow">
-                <i class="uil uil-robot quotess"></i>
-                <h3>
-                  We leverage cutting-edge AI-driven solutions to automate,
-                  enhance, and scale your business through intelligent web
-                  applications.
-                </h3>
-                <a href="contact.html" class="port-links separateweb-btn mt40">
-                  <span
-                    >GET IN TOUCH <i class="uil uil-arrow-up-right"></i
-                  ></span>
-                </a>
-                <img
-                  src="images/ai-innovation.png"
-                  alt="AI Innovation"
-                  class="flotimgsw"
-                />
-              </div>
-            </div>
-            <div class="col-lg-5 mt30">
-              <div class="swheadingwithtext">
-                <h4 class="mb10">AI-Powered Solutions</h4>
-                <p>
-                  We don’t just build websites—we create intelligent digital
-                  solutions that integrate AI for automation and efficiency.
-                </p>
-                <h4 class="mt30 mb10">Innovation & Expertise</h4>
-                <p>
-                  Our team consists of AI specialists and web experts who ensure
-                  your business stays ahead in the tech-driven world.
-                </p>
-                <h4 class="mt30 mb10">End-to-End Support</h4>
-                <p>
-                  We don’t just deliver projects—we provide ongoing support,
-                  updates, and AI-powered enhancements to keep you competitive.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="mt50 mb50">
-        <div class="container">
-          <div class="cta-block-b ctablock">
-            <div class="row justify-content-between">
-              <div class="col-lg-6 vcenter">
-                <div class="cta-heading">
-                  <h2 class="mb20">
-                    Get
-                    <span class="swtextanimate">AI & Web Solutions</span> Under
-                    One Roof
-                  </h2>
-                  <p>
-                    Why juggle multiple agencies when SolutionX provides
-                    integrated Web & AI solutions designed to streamline and
-                    elevate your business?
-                  </p>
-                  <a
-                    href="contact.html"
-                    class="port-links separateweb-btn mt40"
-                  >
-                    <span
-                      >GET IN TOUCH <i class="uil uil-arrow-up-right"></i
-                    ></span>
-                  </a>
-                </div>
-              </div>
-              <div class="col-lg-5 vcenter">
-                <div class="ct-sol-img sw-mmt30">
-                  <img
-                    src="images/ai-solutions.png"
-                    alt="AI Solutions"
-                    class="img-fluid cta-bg-img"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="contact--block pt100 pb100">
-        <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-lg-5 position-relative">
-              <div class="common-heading text-l text-wt">
-                <h2 class="mb0">
-                  Have a <span class="swtextanimate">Web or AI Project</span> in
-                  Mind?
-                </h2>
-                <p>Let’s Talk & Build the Future Together</p>
-              </div>
-              <div class="contact-info mt40">
-                <div class="contact-item mt30">
-                  <a href="mailto:solutionxoffical@gmail.com" tabindex="-1">
-                    <div class="contact-icon v-center">
-                      <i class="uil uil-envelope-alt"></i>
-                    </div>
-                    <div class="text-fld-nx v-center">
-                      <span class="small-text rows">Email Us</span>
-                      <span class="large-text rows"
-                        >solutionxoffical@gmail.com</span
-                      >
-                    </div>
-                  </a>
-                </div>
-                <div class="contact-item mt30">
-                  <a href="tel:+923160865324" class="transition" tabindex="-1">
-                    <div class="contact-icon v-center">
-                      <i class="uil uil-phone"></i>
-                    </div>
-                    <div class="text-fld-nx v-center">
-                      <span class="small-text rows">Call Us</span>
-                      <span class="large-text rows">+92 316 0865324</span>
-                    </div>
-                  </a>
-                </div>
-                <div class="text-fieds- mt40">
-                  <h4>What You’ll Get:</h4>
-                  <ul class="list-style- mt10">
-                    <li>Expert AI & Web Consulting</li>
-                    <li>Tailored Business Solutions</li>
-                    <li>Timely & Scalable Deliverables</li>
-                  </ul>
-                </div>
-              </div>
+          <div class="lg:col-span-5 relative">
+            <div
+              class="aspect-square rounded-xl overflow-hidden shadow-2xl rotate-3 hover:rotate-0 transition-transform duration-700 bg-surface-container-low"
+            >
               <img
-                src="images/ai-support.png"
-                alt="AI Support"
-                class="mandirection"
+                alt="SolutionX AI & Web Solutions"
+                class="w-full h-full object-cover"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuC5NeT_41PfPDRf0CjXuauifFYvSAUEtKBZqe1W1bSo0B0F9EQDSuIFtHHSH4mLoXkrXeiUtQ2-1cl06xWT7wpKLZxZP_NJYHztG9E53pDW3ps20Dy46ydMRAW0IbmbxEscUlH33BeveE2I2YbiZ_J5LgjCIBb6jt0jGIoJm6txRbkB0EsyQoB-jnka3Ev2Yciy_rd4xj_9qxHvURrxDQa0e5wiUcjmFQK5fHxKz1KPWKteh-WtJ4YQfpFq-QewJ_VCP4sPjHdD3FJe"
               />
             </div>
-            <div class="col-lg-7">
-              <div class="contact-form-card-pr contact-block-btm">
-                <div class="separate-web-fb">
-                  <form
-                    action="https://formsubmit.co/solutionxoffical@gmail.com"
-                    method="POST"
-                    id="contactform"
-                    class="separatewebform"
+            <div
+              class="absolute -bottom-6 -left-6 bg-surface-container-lowest p-6 rounded-lg shadow-xl hidden md:block border border-outline-variant/10"
+            >
+              <div class="flex items-center gap-4">
+                <div
+                  class="w-12 h-12 rounded-full bg-tertiary-fixed flex items-center justify-center"
+                >
+                  <span
+                    class="material-symbols-outlined text-on-tertiary-fixed"
+                    data-icon="rocket_launch"
+                    >rocket_launch</span
                   >
-                    <input type="hidden" name="_captcha" value="false" />
-                    <input
-                      type="hidden"
-                      name="_next"
-                      value="https://yourwebsite.com/thank-you"
-                    />
-                    <div class="fieldsets row">
-                      <div class="col-md-6 form-group floating-label">
-                        <input
-                          type="text"
-                          placeholder=" "
-                          required
-                          id="name"
-                          class="floating-input"
-                          name="fullname"
-                        />
-                        <label>Full Name*</label>
-                      </div>
-                      <div class="col-md-6 form-group floating-label">
-                        <input
-                          type="tel"
-                          placeholder=" "
-                          required
-                          id="mobile_number"
-                          class="floating-input"
-                          name="mobile_number"
-                        />
-                        <label>Mobile Number*</label>
-                      </div>
-                    </div>
-                    <div class="fieldsets row">
-                      <div class="col-md-12 form-group floating-label">
-                        <textarea
-                          placeholder=" "
-                          required
-                          id="description"
-                          class="floating-input"
-                          name="description"
-                        ></textarea>
-                        <label>Tell Us About Your Project*</label>
-                      </div>
-                    </div>
-                    <div class="fieldsets mt20">
-                      <button
-                        type="submit"
-                        name="submit"
-                        class="button separateweb-btn w-100"
-                      >
-                        <span>Submit</span>
-                      </button>
-                    </div>
-                    <p class="trm">
-                      <i class="fas fa-lock"></i> Your privacy is our priority.
+                </div>
+                <div>
+                  <p
+                    class="text-xs text-on-surface-variant font-bold uppercase tracking-tighter"
+                  >
+                    AI-Powered
+                  </p>
+                  <p class="text-xl font-bold text-primary">Web & GenAI</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Background Decorative Element -->
+        <div
+          class="absolute top-0 right-0 -z-10 w-1/3 h-full bg-gradient-to-b from-primary-fixed/20 to-transparent blur-3xl opacity-50"
+        ></div>
+      </section>
+      <!-- Services Preview -->
+      <section class="py-16 lg:py-24 px-6">
+        <div class="max-w-7xl mx-auto">
+          <div
+            class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6"
+          >
+            <div class="max-w-xl">
+              <h2
+                class="text-2xl lg:text-4xl font-extrabold font-headline tracking-tight text-primary mb-4"
+              >
+                Explore AI & Web Solutions We Offer
+              </h2>
+              <p class="text-on-surface-variant text-lg leading-relaxed">
+                We combine technical excellence with innovative AI to
+                deliver digital experiences that transform businesses.
+              </p>
+            </div>
+            <a
+              class="text-primary font-bold flex items-center gap-2 group hover:underline underline-offset-8 no-underline"
+              href="services.html"
+            >
+              View All Services
+              <span
+                class="material-symbols-outlined group-hover:translate-x-1 transition-transform"
+                data-icon="arrow_right_alt"
+                >arrow_right_alt</span
+              >
+            </a>
+          </div>
+          <div class="grid md:grid-cols-3 gap-8">
+            <!-- Service 1 -->
+            <div
+              class="bg-surface-container-lowest p-6 md:p-10 rounded-lg hover:bg-surface-bright transition-all group shadow-sm border border-outline-variant/5"
+            >
+              <div
+                class="w-16 h-16 rounded-2xl bg-primary-fixed mb-8 flex items-center justify-center group-hover:scale-110 transition-transform"
+              >
+                <span
+                  class="material-symbols-outlined text-primary text-3xl"
+                  data-icon="smart_toy"
+                  >smart_toy</span
+                >
+              </div>
+              <h3 class="text-2xl font-bold text-primary mb-4">
+                GenAI & Machine Learning
+              </h3>
+              <p class="text-on-surface-variant text-sm leading-relaxed mb-6">
+                Deep specialization in Natural Language Processing (NLP) and Computer Vision (CV) to automate complex visual and textual tasks.
+              </p>
+              <ul class="space-y-3">
+                <li
+                  class="flex items-center gap-2 text-xs text-secondary font-medium"
+                >
+                  <span
+                    class="material-symbols-outlined text-xs"
+                    data-icon="check_circle"
+                    >check_circle</span
+                  >
+                  NLP (Sentiment, Custom LLMs)
+                </li>
+                <li
+                  class="flex items-center gap-2 text-xs text-secondary font-medium"
+                >
+                  <span
+                    class="material-symbols-outlined text-xs"
+                    data-icon="check_circle"
+                    >check_circle</span
+                  >
+                  Computer Vision (Object Detection)
+                </li>
+              </ul>
+            </div>
+            <!-- Service 2 -->
+            <div
+              class="bg-surface-container-lowest p-6 md:p-10 rounded-lg hover:bg-surface-bright transition-all group shadow-sm border border-outline-variant/5"
+            >
+              <div
+                class="w-16 h-16 rounded-2xl bg-secondary-container mb-8 flex items-center justify-center group-hover:scale-110 transition-transform"
+              >
+                <span
+                  class="material-symbols-outlined text-primary text-3xl"
+                  data-icon="web"
+                  >web</span
+                >
+              </div>
+              <h3 class="text-2xl font-bold text-primary mb-4">
+                Custom Web & CMS
+              </h3>
+              <p class="text-on-surface-variant text-sm leading-relaxed mb-6">
+                Expert development in PHP CodeIgniter 4 and WordPress. We build custom themes, plugins, and scalable enterprise portals.
+              </p>
+              <ul class="space-y-3">
+                <li
+                  class="flex items-center gap-2 text-xs text-secondary font-medium"
+                >
+                  <span
+                    class="material-symbols-outlined text-xs"
+                    data-icon="check_circle"
+                    >check_circle</span
+                  >
+                  PHP CI4 & WordPress Mastery
+                </li>
+                <li
+                  class="flex items-center gap-2 text-xs text-secondary font-medium"
+                >
+                  <span
+                    class="material-symbols-outlined text-xs"
+                    data-icon="check_circle"
+                    >check_circle</span
+                  >
+                  Theme & Plugin Development
+                </li>
+              </ul>
+            </div>
+            <!-- Service 3 -->
+            <div
+              class="bg-surface-container-lowest p-6 md:p-10 rounded-lg hover:bg-surface-bright transition-all group shadow-sm border border-outline-variant/5"
+            >
+              <div
+                class="w-16 h-16 rounded-2xl bg-tertiary-fixed mb-8 flex items-center justify-center group-hover:scale-110 transition-transform"
+              >
+                <span
+                  class="material-symbols-outlined text-primary text-3xl"
+                  data-icon="brush"
+                  >brush</span
+                >
+              </div>
+              <h3 class="text-2xl font-bold text-primary mb-4">
+                Mobile App Solutions
+              </h3>
+              <p class="text-on-surface-variant text-sm leading-relaxed mb-6">
+                Cross-platform mobile experiences powered by React Native. High-performance apps for both iOS and Android.
+              </p>
+              <ul class="space-y-3">
+                <li
+                  class="flex items-center gap-2 text-xs text-secondary font-medium"
+                >
+                  <span
+                    class="material-symbols-outlined text-xs"
+                    data-icon="check_circle"
+                    >check_circle</span
+                  >
+                  React Native (iOS & Android)
+                </li>
+                <li
+                  class="flex items-center gap-2 text-xs text-secondary font-medium"
+                >
+                  <span
+                    class="material-symbols-outlined text-xs"
+                    data-icon="check_circle"
+                    >check_circle</span
+                  >
+                  Native Feature Integration
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Why Choose Us -->
+      <section class="py-16 lg:py-24 bg-surface-container-low overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6">
+          <div class="grid lg:grid-cols-2 gap-16 items-center">
+            <div class="relative">
+              <div class="aspect-[4/5] rounded-xl overflow-hidden shadow-2xl">
+                <img
+                  alt="SolutionX Team"
+                  class="w-full h-full object-cover"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuCkpvQVg9Gn0kVpEQ-YqTRpXSH_uo90j3-bxMw_vIfcEyY2Jv4VUwwNns5rKCkvo4NcQqLO28b4wSnIxuyQuhATOjYbd3smk6dK9Y1JBjv47dDpm-Ul96h8mF3yiaqRBsteRrYHo9QouYg777EXy8hVoSXTPrOYYChEt_nYK7q4nbWhopsqhA2ixYPySObScuLms3q8pEKxIcza501TBHDSUsbB0ykjzXoXo1Xtcc6ESsgSaUNv5FRpJ7Eapehs60IepXnL5Yj7_JN8"
+                />
+              </div>
+              <div
+                class="absolute top-1/2 -right-12 lg:-right-24 transform -translate-y-1/2 bg-primary text-on-primary p-12 rounded-lg shadow-2xl max-w-xs"
+              >
+                <div class="text-5xl font-extrabold mb-2 font-headline">
+                  2+
+                </div>
+                <p class="text-lg font-medium opacity-80">
+                  Years of delivering innovative Web & AI solutions.
+                </p>
+              </div>
+            </div>
+            <div class="lg:pl-16">
+              <span
+                class="text-primary font-bold tracking-widest uppercase text-xs mb-4 block font-label"
+                >The SolutionX Advantage</span
+              >
+              <h2
+                class="text-2xl lg:text-5xl font-extrabold font-headline tracking-tight text-primary mb-6 leading-tight"
+              >
+                Smart Web & AI Solutions Tailored for Your Business Success.
+              </h2>
+              <div class="space-y-8">
+                <div class="flex gap-6">
+                  <div
+                    class="flex-shrink-0 w-12 h-12 rounded-xl border-2 border-primary flex items-center justify-center text-primary"
+                  >
+                    <span
+                      class="material-symbols-outlined"
+                      data-icon="smart_toy"
+                      >smart_toy</span
+                    >
+                  </div>
+                  <div>
+                    <h4 class="text-xl font-bold text-primary mb-2">
+                      AI-Powered Solutions
+                    </h4>
+                    <p class="text-on-surface-variant leading-relaxed">
+                      We don't just build websites—we create intelligent digital
+                      solutions that integrate AI for automation and efficiency.
                     </p>
-                  </form>
+                  </div>
+                </div>
+                <div class="flex gap-6">
+                  <div
+                    class="flex-shrink-0 w-12 h-12 rounded-xl border-2 border-primary flex items-center justify-center text-primary"
+                  >
+                    <span class="material-symbols-outlined" data-icon="speed"
+                      >speed</span
+                    >
+                  </div>
+                  <div>
+                    <h4 class="text-xl font-bold text-primary mb-2">
+                      Innovation & Expertise
+                    </h4>
+                    <p class="text-on-surface-variant leading-relaxed">
+                      Our team consists of AI specialists and web experts who ensure
+                      your business stays ahead in the tech-driven world.
+                    </p>
+                  </div>
+                </div>
+                <div class="flex gap-6">
+                  <div
+                    class="flex-shrink-0 w-12 h-12 rounded-xl border-2 border-primary flex items-center justify-center text-primary"
+                  >
+                    <span class="material-symbols-outlined" data-icon="forum"
+                      >forum</span
+                    >
+                  </div>
+                  <div>
+                    <h4 class="text-xl font-bold text-primary mb-2">
+                      End-to-End Support
+                    </h4>
+                    <p class="text-on-surface-variant leading-relaxed">
+                      We don't just deliver projects—we provide ongoing support,
+                      updates, and AI-powered enhancements to keep you competitive.
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </section>
-
-      <div class="separatewebhranimation">
-        <div class="marquee__inner" aria-hidden="true">
-          <ul class="marquee-item-list">
-            <li>Web Development</li>
-            <li>Full Stack Web Development</li>
-            <li>Software Development</li>
-            <li>Web Design and Development</li>
-            <li>Ecommerce Development</li>
-            <li>AI Integration</li>
-            <li>GenAI Solutions</li>
-            <li>Custom Chatbots</li>
-            <li>RAG (Retrieval-Augmented Generation)</li>
-            <li>SEO Optimization</li>
-          </ul>
-        </div>
-      </div>
-
-      <footer class="🌏 pt50 pb40">
-        <div class="container">
-          <div class="row justify-content-between separateweb-footer-wrap">
-            <!-- Contact Section -->
-            <div class="col-lg-4 col-sm-12 pt40">
-              <div class="footerdez-a">
-                <p>
-                  Got a project in mind or just want to say hi? We're always
-                  open to conversations, collaborations, or coffee!
+      <!-- Portfolio Preview -->
+      <section class="py-16 lg:py-24 px-6">
+        <div class="max-w-7xl mx-auto">
+          <div class="text-center mb-16">
+            <h2
+              class="text-2xl lg:text-4xl font-extrabold font-headline tracking-tight text-primary mb-4"
+            >
+              Our Recent Projects
+            </h2>
+            <p class="text-on-surface-variant max-w-2xl mx-auto">
+              Empowering businesses with Web and GenAI solutions across industries.
+            </p>
+          </div>
+          <div class="grid md:grid-cols-12 gap-8">
+            <!-- Project 1 -->
+            <div
+              class="md:col-span-8 group relative overflow-hidden rounded-xl bg-surface-container-high h-[500px]"
+            >
+              <img
+                alt="AI Retail Platform"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBWdycssHahXwyPyHy3LwY6sWaniGne41X9R_klHpln6ENkndiJwCSXrfBg74gjFKGXBGdjuaV7G3tEdDFfkwfqki-75LMdtj6VgNb98e-4H1uDWrLslNJDnnEpWEb85siLmB0uhAhAiczz7ZbDrfz4183xde6-Ad7u1iW7S_BUkFQ86H5Ez7mp0g_-Ipw_r5_BuBd_KgYXKh1TtlZb83tHdWSFNisyxT1hRBIVYl234nNqlsH3EpPkLBIdRJl93dVdkgujKnNPiNHV"
+              />
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/20 to-transparent flex flex-col justify-end p-10 text-on-primary opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+              >
+                <p
+                  class="text-sm font-bold uppercase tracking-widest mb-2 font-label"
+                >
+                  E-Commerce & AI
                 </p>
-                <div class="contactinfo mt30">
-                  <a href="mailto:solutionxofficial@gmail.com">
-                    <i class="uil uil-envelope"></i> solutionxofficial@gmail.com
-                    <span>→</span>
-                  </a>
-                  <a href="https://wa.me/923160865324" target="_blank">
-                    <i class="uil uil-whatsapp"></i> +92 316 0865324
-                    <span>→</span>
-                  </a>
-                </div>
+                <h3 class="text-3xl font-bold font-headline mb-4">
+                  AI Retail Platform
+                </h3>
+                <p class="max-w-md mb-6 font-light opacity-90">
+                  An AI-driven e-commerce solution with personalized
+                  recommendations and automated inventory management.
+                </p>
+                <a
+                  href="portfolio.html"
+                  class="w-fit border border-on-primary/30 px-5 py-2 md:px-6 md:py-2 rounded-xl hover:bg-on-primary hover:text-primary transition-all font-bold no-underline text-on-primary text-sm md:text-base"
+                >
+                  View Portfolio
+                </a>
               </div>
             </div>
-
-            <!-- Footer Links -->
-            <div class="col-lg-7 col-sm-12">
-              <div class="row fttlnks">
-                <!-- Company Links -->
-                <div class="col-lg-4 col-sm-6 col-6 pt40">
-                  <h5>Company</h5>
-                  <ul class="footer-address-list 🔗">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="portfolio.html">Portfolio</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                  </ul>
-                </div>
-
-                <!-- Services -->
-                <div class="col-lg-4 col-sm-6 col-6 pt40">
-                  <h5>Services</h5>
-                  <ul class="footer-address-list 🔗">
-                    <li><a href="services.html">Web & App Development</a></li>
-                    <li><a href="services.html">Ecommerce Solutions</a></li>
-                    <li><a href="services.html">GenAI & Chatbots</a></li>
-                    <li><a href="services.html">Custom Chatbots</a></li>
-                    <li>
-                      <a href="services.html">RAG (AI Retrieval Systems)</a>
-                    </li>
-                  </ul>
-                </div>
-
-                <!-- Social Media -->
-                <div class="col-lg-4 col-sm-6 col-6 pt40">
-                  <h5>Connect with Us</h5>
-                  <ul class="footer-address-list 🔗">
-                    <li>
-                      <a
-                        href="https://www.facebook.com/people/SolutionX/100092121775499/"
-                        target="_blank"
-                        >Facebook</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        href="https://www.instagram.com/solutionxoffical/"
-                        target="_blank"
-                        >Instagram</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        href="https://github.com/SolutionX-Official/"
-                        target="_blank"
-                        >GitHub</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        href="https://www.linkedin.com/company/solutions-x/"
-                        target="_blank"
-                        >LinkedIn</a
-                      >
-                    </li>
-                  </ul>
-                </div>
+            <!-- Project 2 -->
+            <div
+              class="md:col-span-4 group relative overflow-hidden rounded-xl bg-surface-container-high h-[500px]"
+            >
+              <img
+                alt="Smart Logistics Dashboard"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCCWo0GHIxfD5HiSkT-1rFVpVikyayffhy7sCWOLfJTytgFvZsF0SvTdpFYqjOEaVEEKH1atX-Z-vzlhRePc09nDCf6TaJ3dr3QdLL08rmSM8ZZ0I305QvzXrgK4ZlO08Py2rCxjoxSpEiMsTM7dmbTr8UO8QttXFlAwsjPrPRWKX7nYrG10jN03f2rufPYSbWXZs2522LZXomi6lfkagSP8KzaVsEWlpRfj36AjiGUt3EHcTV467qWa6ql5oikko2hKSln3XuJkxLA"
+              />
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/20 to-transparent flex flex-col justify-end p-10 text-on-primary opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+              >
+                <p
+                  class="text-sm font-bold uppercase tracking-widest mb-2 font-label"
+                >
+                  Analytics & AI
+                </p>
+                <h3 class="text-3xl font-bold font-headline mb-4">
+                  Smart Logistics Dashboard
+                </h3>
+                <a
+                  href="portfolio.html"
+                  class="w-fit border border-on-primary/30 px-5 py-2 md:px-6 md:py-2 rounded-xl hover:bg-on-primary hover:text-primary transition-all font-bold no-underline text-on-primary text-sm md:text-base"
+                >
+                  View Portfolio
+                </a>
               </div>
             </div>
           </div>
-
-          <!-- Centered Copyright -->
-          <div class="row mt60">
-            <div class="col-12 text-center">
-              <p class="SeparateWeb-rights">
-                © 2025 SolutionX. All rights reserved. | Built with ❤️ and
-                innovation.
+        </div>
+      </section>
+      <!-- CTA Section -->
+      <section class="py-16 lg:py-24 bg-primary overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6 relative">
+          <!-- Quote Icon -->
+          <span
+            class="material-symbols-outlined absolute top-0 left-8 text-on-primary/10 text-[120px] pointer-events-none select-none"
+            data-icon="format_quote"
+            >format_quote</span
+          >
+          <div class="grid md:grid-cols-2 gap-12 items-center">
+            <div>
+              <h2
+                class="text-2xl lg:text-5xl font-extrabold font-headline text-on-primary mb-6"
+              >
+                Let's Innovate Together
+              </h2>
+              <div class="bg-primary-container p-8 rounded-lg shadow-2xl">
+                <p
+                  class="text-xl lg:text-2xl text-on-primary-container italic font-light leading-relaxed mb-8"
+                >
+                  Ready to integrate AI into your business? Our expert team at
+                  SolutionX is here to build the next-gen solution for you.
+                  We leverage cutting-edge AI-driven solutions to automate,
+                  enhance, and scale your business.
+                </p>
+                <a
+                  href="contact.html"
+                  class="inline-flex items-center justify-center gap-2 bg-tertiary-fixed-dim text-on-tertiary-fixed px-6 py-3 md:px-8 md:py-3 rounded-xl font-bold text-base md:text-lg hover:scale-105 transition-all no-underline"
+                >
+                  Talk to Our AI & Web Experts
+                  <span class="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span>
+                </a>
+              </div>
+            </div>
+            <div class="hidden md:flex flex-col gap-6">
+              <div class="bg-white/5 p-8 rounded-lg border border-white/10 ml-12">
+                <h4 class="text-on-primary font-bold text-lg mb-2">What You'll Get:</h4>
+                <ul class="text-on-primary/80 space-y-2 text-sm">
+                  <li>✓ Premium PHP CI4 & Web Systems</li>
+                  <li>✓ WordPress Theme & Plugin Mastery</li>
+                  <li>✓ Cross-Platform React Native Apps</li>
+                  <li>✓ Advanced AI (CV, NLP, RAG)</li>
+                </ul>
+              </div>
+              <div class="bg-white/5 p-8 rounded-lg border border-white/10 mr-12">
+                <h4 class="text-on-primary font-bold text-lg mb-2">Tech Mastery</h4>
+                <p class="text-on-primary/80 text-sm">
+                  React.js, Next.js, PHP CodeIgniter 4, WordPress, Python, React Native,
+                  Computer Vision, NLP, Llama 3, and AWS Scaling.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Process Section -->
+      <section class="py-24 px-8">
+        <div class="max-w-7xl mx-auto">
+          <div class="text-center mb-16">
+            <h2
+              class="text-2xl lg:text-4xl font-extrabold font-headline tracking-tight text-primary mb-4"
+            >
+              Our Proven Process
+            </h2>
+            <p class="text-on-surface-variant max-w-2xl mx-auto">
+              A structured approach to turning complex problems into elegant
+              AI-powered solutions.
+            </p>
+          </div>
+          <div class="grid md:grid-cols-4 gap-4">
+            <!-- Step 1 -->
+            <div
+              class="relative p-8 rounded-lg bg-surface-container-low hover:bg-surface-container transition-colors text-center"
+            >
+              <div
+                class="text-6xl font-extrabold text-primary/5 absolute top-4 left-1/2 -translate-x-1/2"
+              >
+                01
+              </div>
+              <div class="relative z-10">
+                <div
+                  class="w-12 h-12 rounded-xl bg-primary text-on-primary flex items-center justify-center mx-auto mb-6"
+                >
+                  <span class="material-symbols-outlined" data-icon="search"
+                    >search</span
+                  >
+                </div>
+                <h4 class="text-xl font-bold text-primary mb-3">Discover</h4>
+                <p class="text-sm text-on-surface-variant">
+                  In-depth research and strategy to define project goals and
+                  roadmap.
+                </p>
+              </div>
+            </div>
+            <!-- Step 2 -->
+            <div
+              class="relative p-8 rounded-lg bg-surface-container-low hover:bg-surface-container transition-colors text-center"
+            >
+              <div
+                class="text-6xl font-extrabold text-primary/5 absolute top-4 left-1/2 -translate-x-1/2"
+              >
+                02
+              </div>
+              <div class="relative z-10">
+                <div
+                  class="w-12 h-12 rounded-full bg-primary text-on-primary flex items-center justify-center mx-auto mb-6"
+                >
+                  <span
+                    class="material-symbols-outlined"
+                    data-icon="architecture"
+                    >architecture</span
+                  >
+                </div>
+                <h4 class="text-xl font-bold text-primary mb-3">Design</h4>
+                <p class="text-sm text-on-surface-variant">
+                  Creating intuitive user interfaces and world-class user
+                  experiences.
+                </p>
+              </div>
+            </div>
+            <!-- Step 3 -->
+            <div
+              class="relative p-8 rounded-lg bg-surface-container-low hover:bg-surface-container transition-colors text-center"
+            >
+              <div
+                class="text-6xl font-extrabold text-primary/5 absolute top-4 left-1/2 -translate-x-1/2"
+              >
+                03
+              </div>
+              <div class="relative z-10">
+                <div
+                  class="w-12 h-12 rounded-full bg-primary text-on-primary flex items-center justify-center mx-auto mb-6"
+                >
+                  <span class="material-symbols-outlined" data-icon="code"
+                    >code</span
+                  >
+                </div>
+                <h4 class="text-xl font-bold text-primary mb-3">Develop</h4>
+                <p class="text-sm text-on-surface-variant">
+                  Agile development with AI integration and rigorous testing.
+                </p>
+              </div>
+            </div>
+            <!-- Step 4 -->
+            <div
+              class="relative p-8 rounded-lg bg-surface-container-low hover:bg-surface-container transition-colors text-center"
+            >
+              <div
+                class="text-6xl font-extrabold text-primary/5 absolute top-4 left-1/2 -translate-x-1/2"
+              >
+                04
+              </div>
+              <div class="relative z-10">
+                <div
+                  class="w-12 h-12 rounded-full bg-primary text-on-primary flex items-center justify-center mx-auto mb-6"
+                >
+                  <span
+                    class="material-symbols-outlined"
+                    data-icon="rocket_launch"
+                    >rocket_launch</span
+                  >
+                </div>
+                <h4 class="text-xl font-bold text-primary mb-3">Launch</h4>
+                <p class="text-sm text-on-surface-variant">
+                  Deployment to production and ongoing maintenance and
+                  support.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Tech Stack -->
+      <section class="py-24 bg-surface-container-low">
+        <div class="max-w-7xl mx-auto px-8">
+          <div
+            class="flex flex-col md:flex-row items-center justify-between gap-12"
+          >
+            <div class="max-w-md">
+              <h2
+                class="text-3xl font-extrabold font-headline text-primary mb-4"
+              >
+                Our Technology Stack
+              </h2>
+              <p class="text-on-surface-variant">
+                We utilize the most advanced technologies to build future-proof
+                web and AI solutions.
               </p>
             </div>
+            <div class="flex flex-wrap gap-8 justify-center">
+              <!-- React -->
+              <div class="w-24 h-24 bg-surface-container-lowest rounded-2xl flex flex-col items-center justify-center shadow-sm hover:shadow-xl hover:scale-110 transition-all duration-300 group" title="React.js">
+                <svg viewBox="0 0 100 100" class="w-10 h-10 mb-2 grayscale group-hover:grayscale-0 transition-all drop-shadow-sm">
+                  <circle cx="50" cy="50" r="10" fill="#61DAFB"/>
+                  <ellipse cx="50" cy="50" rx="40" ry="15" fill="none" stroke="#61DAFB" stroke-width="2"/>
+                  <ellipse cx="50" cy="50" rx="40" ry="15" fill="none" stroke="#61DAFB" stroke-width="2" transform="rotate(60 50 50)"/>
+                  <ellipse cx="50" cy="50" rx="40" ry="15" fill="none" stroke="#61DAFB" stroke-width="2" transform="rotate(120 50 50)"/>
+                </svg>
+                <span class="text-[10px] font-bold text-slate-400 group-hover:text-primary transition-colors uppercase tracking-widest">React</span>
+              </div>
+              <!-- Node.js -->
+              <div class="w-24 h-24 bg-surface-container-lowest rounded-2xl flex flex-col items-center justify-center shadow-sm hover:shadow-xl hover:scale-110 transition-all duration-300 group" title="Node.js">
+                <svg viewBox="0 0 100 100" class="w-10 h-10 mb-2 grayscale group-hover:grayscale-0 transition-all">
+                  <path fill="#339933" d="M85,30l-30-17.3c-3.1-1.8-6.9-1.8-10,0L15,30c-3.1,1.8-5,5.1-5,8.7v34.7c0,3.6,1.9,6.9,5,8.7l30,17.3c3.1,1.8,6.9,1.8,10,0l30-17.3c3.1-1.8,5-5.1,5-8.7V38.7C90,35.1,88.1,31.8,85,30z"/>
+                </svg>
+                <span class="text-[10px] font-bold text-slate-400 group-hover:text-primary transition-colors uppercase tracking-widest">Node.js</span>
+              </div>
+              <!-- Python -->
+              <div class="w-24 h-24 bg-surface-container-lowest rounded-2xl flex flex-col items-center justify-center shadow-sm hover:shadow-xl hover:scale-110 transition-all duration-300 group" title="Python">
+                <svg viewBox="0 0 100 100" class="w-10 h-10 mb-2 grayscale group-hover:grayscale-0 transition-all">
+                  <path fill="#3776AB" d="M50,10c-15,0-14,6-14,6V22h14v2h-20c-8,0-14,6-14,14v10c0,8,6,14,14,14h6v-8c0-8,6-14,14-14h14v-6c0-6-6-14-14-14H50z"/>
+                  <path fill="#FFD43B" d="M50,90c15,0,14-6,14-6V78H50v-2h20c8,0,14-6,14-14V52c0-8-6-14-14-14h-6v8c0,8-6,14-14,14H36v6c0,6,6,14,14,14H50z"/>
+                </svg>
+                <span class="text-[10px] font-bold text-slate-400 group-hover:text-primary transition-colors uppercase tracking-widest">Python</span>
+              </div>
+              <!-- TypeScript -->
+              <div class="w-24 h-24 bg-surface-container-lowest rounded-2xl flex flex-col items-center justify-center shadow-sm hover:shadow-xl hover:scale-110 transition-all duration-300 group" title="TypeScript">
+                <svg viewBox="0 0 100 100" class="w-10 h-10 mb-2 grayscale group-hover:grayscale-0 transition-all">
+                  <rect width="100" height="100" fill="#3178C6" rx="15"/>
+                  <text x="50" y="65" fill="white" font-size="50" font-weight="bold" text-anchor="middle" font-family="Arial">TS</text>
+                </svg>
+                <span class="text-[10px] font-bold text-slate-400 group-hover:text-primary transition-colors uppercase tracking-widest">TS</span>
+              </div>
+              <!-- PostgreSQL -->
+              <div class="w-24 h-24 bg-surface-container-lowest rounded-2xl flex flex-col items-center justify-center shadow-sm hover:shadow-xl hover:scale-110 transition-all duration-300 group" title="PostgreSQL">
+                <svg viewBox="0 0 100 100" class="w-10 h-10 mb-2 grayscale group-hover:grayscale-0 transition-all">
+                  <path fill="#336791" d="M50 10c-15 0-25 10-25 25 0 8 4 15 10 20-2 2-5 3-10 3-8 0-15-5-15-13 0-10 10-20 25-20 0-5 5-10 15-10 12 0 20 6 20 15 0 8-5 15-15 15-5 0-10-2-10-2s5 7 15 7c10 0 20-8 20-20 0-15-10-25-30-25z"/>
+                </svg>
+                <span class="text-[10px] font-bold text-slate-400 group-hover:text-primary transition-colors uppercase tracking-widest">Postgres</span>
+              </div>
+              <!-- AWS -->
+              <div class="w-24 h-24 bg-surface-container-lowest rounded-2xl flex flex-col items-center justify-center shadow-sm hover:shadow-xl hover:scale-110 transition-all duration-300 group" title="AWS">
+                <svg viewBox="0 0 100 100" class="w-10 h-10 mb-2 grayscale group-hover:grayscale-0 transition-all">
+                  <path fill="#FF9900" d="M50 20c-15 0-28 12-28 28s13 28 28 28 28-12 28-28-13-28-28-28zm0 46c-10 0-18-8-18-18s8-18 18-18 18 8 18 18-8 18-18 18z"/>
+                  <path fill="#232F3E" d="M30 75c5 5 15 8 20 8s15-3 20-8l-2-2c-4 4-13 6-18 6s-14-2-18-6l-2 2z"/>
+                  <path fill="#232F3E" d="M68 70l2 6 6-2z"/>
+                </svg>
+                <span class="text-[10px] font-bold text-slate-400 group-hover:text-primary transition-colors uppercase tracking-widest">AWS</span>
+              </div>
+            </div>
           </div>
         </div>
-      </footer>
-    </div>
+      </section>
+      <!-- Final CTA -->
+      <section class="py-24 px-8">
+        <div class="max-w-7xl mx-auto">
+          <div
+            class="relative rounded-xl overflow-hidden hero-gradient p-16 lg:p-24 text-center"
+          >
+            <div class="relative z-10 max-w-3xl mx-auto">
+              <h2
+                class="text-4xl lg:text-6xl font-extrabold font-headline text-on-primary mb-8"
+              >
+                Have a Web or AI Project in Mind?
+              </h2>
+              <p class="text-xl text-on-primary/80 mb-12 font-light">
+                Let's create something smart together! Get in touch to explore
+                AI-driven possibilities for your business.
+              </p>
+              <div class="flex flex-wrap justify-center gap-4">
+                <a
+                  href="contact.html"
+                  class="bg-tertiary-fixed-dim text-on-tertiary-fixed px-10 py-5 rounded-xl font-bold text-xl hover:scale-105 transition-all shadow-xl no-underline"
+                >
+                  Start Your Project
+                </a>
+                <a
+                  href="mailto:solutionxofficial@gmail.com"
+                  class="bg-white/10 text-on-primary border border-white/20 backdrop-blur-md px-10 py-5 rounded-xl font-bold text-xl hover:bg-white/20 transition-all no-underline break-all"
+                >
+                  Email Us
+                </a>
+              </div>
+            </div>
+            <!-- Decorative Background Circle -->
+            <div
+              class="absolute -top-24 -right-24 w-96 h-96 bg-white/5 rounded-full blur-3xl"
+            ></div>
+            <div
+              class="absolute -bottom-24 -left-24 w-96 h-96 bg-tertiary-fixed/10 rounded-full blur-3xl"
+            ></div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer class="bg-slate-50 w-full rounded-t-3xl mt-12">
+      <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12 px-8 py-16">
+        <div class="space-y-6">
+          <div class="text-lg font-bold text-blue-950 font-headline">SolutionX</div>
+          <p class="text-slate-500 font-body text-sm leading-relaxed">
+            Empowering global businesses with innovative Web and Generative AI solutions. We transform complex ideas into smart, scalable digital products across the US, Europe, and beyond.
+          </p>
+          <div class="space-y-2">
+            <a href="mailto:solutionxofficial@gmail.com" class="text-slate-500 hover:text-blue-600 text-sm flex items-center gap-2 transition-all no-underline break-all">
+              <span class="material-symbols-outlined text-sm">mail</span>
+              solutionxofficial@gmail.com
+            </a>
+            <a href="https://wa.me/923160865324" target="_blank" class="text-slate-500 hover:text-blue-600 text-sm flex items-center gap-2 transition-all no-underline">
+              <span class="material-symbols-outlined text-sm">chat</span>
+              +92 316 0865324
+            </a>
+          </div>
+          <div class="flex gap-4">
+            <a class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center hover:bg-primary-fixed transition-colors" href="https://www.facebook.com/people/SolutionX/100092121775499/" target="_blank" title="Facebook">
+              <span class="material-symbols-outlined text-sm text-slate-600">public</span>
+            </a>
+            <a class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center hover:bg-primary-fixed transition-colors" href="https://www.instagram.com/solutionxoffical/" target="_blank" title="Instagram">
+              <span class="material-symbols-outlined text-sm text-slate-600">photo_camera</span>
+            </a>
+            <a class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center hover:bg-primary-fixed transition-colors" href="https://github.com/SolutionX-Official/" target="_blank" title="GitHub">
+              <span class="material-symbols-outlined text-sm text-slate-600">code</span>
+            </a>
+            <a class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center hover:bg-primary-fixed transition-colors" href="https://www.linkedin.com/company/solutions-x/" target="_blank" title="LinkedIn">
+              <span class="material-symbols-outlined text-sm text-slate-600">business_center</span>
+            </a>
+          </div>
+        </div>
+        <div>
+          <h6 class="font-bold text-primary mb-6">Company</h6>
+          <ul class="space-y-4 text-slate-500 text-sm">
+            <li><a class="hover:text-blue-600 hover:underline underline-offset-4 transition-all" href="index.html">Home</a></li>
+            <li><a class="hover:text-blue-600 hover:underline underline-offset-4 transition-all" href="about.html">About Us</a></li>
+            <li><a class="hover:text-blue-600 hover:underline underline-offset-4 transition-all" href="services.html">Services</a></li>
+            <li><a class="hover:text-blue-600 hover:underline underline-offset-4 transition-all" href="portfolio.html">Portfolio</a></li>
+            <li><a class="hover:text-blue-600 hover:underline underline-offset-4 transition-all" href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h6 class="font-bold text-primary mb-6">Services</h6>
+          <ul class="space-y-4 text-slate-500 text-sm">
+            <li><a class="hover:text-blue-600 hover:underline underline-offset-4 transition-all" href="services.html">Web & App Development</a></li>
+            <li><a class="hover:text-blue-600 hover:underline underline-offset-4 transition-all" href="services.html">GenAI Business Automation</a></li>
+            <li><a class="hover:text-blue-600 hover:underline underline-offset-4 transition-all" href="services.html">Custom AI Chatbots</a></li>
+            <li><a class="hover:text-blue-600 hover:underline underline-offset-4 transition-all" href="services.html">RAG & Knowledge Systems</a></li>
+          </ul>
+        </div>
+        <div>
+          <h6 class="font-bold text-primary mb-6">Mastery Stack</h6>
+          <div class="grid grid-cols-4 gap-4">
+            <!-- Icons for Tech -->
+            <div class="flex flex-col items-center gap-1 group" title="React.js / Native">
+              <div class="w-10 h-10 rounded-lg bg-white flex items-center justify-center shadow-sm border border-slate-100 group-hover:scale-110 transition-transform">
+                <svg viewBox="0 0 100 100" class="w-6 h-6"><circle cx="50" cy="50" r="10" fill="#61DAFB"/><ellipse cx="50" cy="50" rx="40" ry="15" fill="none" stroke="#61DAFB" stroke-width="2"/><ellipse cx="50" cy="50" rx="40" ry="15" fill="none" stroke="#61DAFB" stroke-width="2" transform="rotate(60 50 50)"/><ellipse cx="50" cy="50" rx="40" ry="15" fill="none" stroke="#61DAFB" stroke-width="2" transform="rotate(120 50 50)"/></svg>
+              </div>
+              <span class="text-[8px] font-bold text-slate-400">React</span>
+            </div>
+            <div class="flex flex-col items-center gap-1 group" title="Next.js">
+              <div class="w-10 h-10 rounded-lg bg-white flex items-center justify-center shadow-sm border border-slate-100 group-hover:scale-110 transition-transform">
+                <svg viewBox="0 0 100 100" class="w-6 h-6"><circle cx="50" cy="50" r="48" fill="black"/><path d="M70 30 L35 70 L30 70 L30 30" stroke="white" stroke-width="5" fill="none"/><path d="M70 30 L70 70" stroke="white" stroke-width="5"/></svg>
+              </div>
+              <span class="text-[8px] font-bold text-slate-400">Next.js</span>
+            </div>
+            <div class="flex flex-col items-center gap-1 group" title="Node.js">
+              <div class="w-10 h-10 rounded-lg bg-white flex items-center justify-center shadow-sm border border-slate-100 group-hover:scale-110 transition-transform">
+                <svg viewBox="0 0 100 100" class="w-6 h-6"><path fill="#339933" d="M85,30l-30-17.3c-3.1-1.8-6.9-1.8-10,0L15,30c-3.1,1.8-5,5.1-5,8.7v34.7c0,3.6,1.9,6.9,5,8.7l30,17.3c3.1,1.8,6.9,1.8,10,0l30-17.3c3.1-1.8,5-5.1,5-8.7V38.7C90,35.1,88.1,31.8,85,30z"/></svg>
+              </div>
+              <span class="text-[8px] font-bold text-slate-400">Node</span>
+            </div>
+            <div class="flex flex-col items-center gap-1 group" title="PHP CI4">
+              <div class="w-10 h-10 rounded-lg bg-white flex items-center justify-center shadow-sm border border-slate-100 group-hover:scale-110 transition-transform">
+                <svg viewBox="0 0 100 100" class="w-6 h-6"><ellipse cx="50" cy="50" rx="45" ry="25" fill="#4F5B93"/><text x="50" y="58" font-size="25" fill="white" font-weight="bold" text-anchor="middle">PHP</text></svg>
+              </div>
+              <span class="text-[8px] font-bold text-slate-400">PHP/CI4</span>
+            </div>
+            <div class="flex flex-col items-center gap-1 group" title="WordPress">
+              <div class="w-10 h-10 rounded-lg bg-white flex items-center justify-center shadow-sm border border-slate-100 group-hover:scale-110 transition-transform">
+                <svg viewBox="0 0 100 100" class="w-6 h-6"><circle cx="50" cy="50" r="45" fill="#21759B"/><text x="50" y="65" font-size="50" fill="white" font-weight="bold" text-anchor="middle">W</text></svg>
+              </div>
+              <span class="text-[8px] font-bold text-slate-400">WP</span>
+            </div>
+            <div class="flex flex-col items-center gap-1 group" title="Python">
+              <div class="w-10 h-10 rounded-lg bg-white flex items-center justify-center shadow-sm border border-slate-100 group-hover:scale-110 transition-transform">
+                <svg viewBox="0 0 100 100" class="w-6 h-6"><path fill="#3776AB" d="M50,10c-15,0-14,6-14,6V22h14v2h-20c-8,0-14,6-14,14v10c0,8,6,14,14,14h6v-8c0-8,6-14,14-14h14v-6c0-6-6-14-14-14H50z"/><path fill="#FFD43B" d="M50,90c15,0,14-6,14-6V78H50v-2h20c8,0,14-6,14-14V52c0-8-6-14-14-14h-6v8c0,8-6,14-14,14H36v6c0,6,6,14,14,14H50z"/></svg>
+              </div>
+              <span class="text-[8px] font-bold text-slate-400">Python</span>
+            </div>
+            <div class="flex flex-col items-center gap-1 group" title="Computer Vision">
+              <div class="w-10 h-10 rounded-lg bg-white flex items-center justify-center shadow-sm border border-slate-100 group-hover:scale-110 transition-transform">
+                <span class="material-symbols-outlined text-primary text-xl">visibility</span>
+              </div>
+              <span class="text-[8px] font-bold text-slate-400">CV/AI</span>
+            </div>
+            <div class="flex flex-col items-center gap-1 group" title="NLP & RAG">
+              <div class="w-10 h-10 rounded-lg bg-white flex items-center justify-center shadow-sm border border-slate-100 group-hover:scale-110 transition-transform">
+                <span class="material-symbols-outlined text-primary text-xl">psychology_alt</span>
+              </div>
+              <span class="text-[8px] font-bold text-slate-400">NLP/RAG</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="max-w-7xl mx-auto px-8 pb-8 border-t border-slate-200 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+        <p class="text-slate-400 text-xs">
+          © 2025 SolutionX. All rights reserved. | Delivering Innovation Globally.
+        </p>
+        <div class="flex gap-6">
+          <a href="contact.html" class="text-slate-400 text-xs hover:text-primary transition-colors">Privacy Policy</a>
+          <a href="contact.html" class="text-slate-400 text-xs hover:text-primary transition-colors">Terms of Service</a>
+        </div>
+      </div>
+    </footer>
+
     <!-- Floating Contact Buttons -->
-    <div
-      class="d-flex flex-column align-items-center"
-      style="
-        position: fixed;
-        bottom: 20px;
-        right: 20px;
-        z-index: 1000;
-        gap: 15px;
-      "
-    >
-      <!-- Phone -->
-      <a
-        href="tel:+923160865324"
-        class="btn contact-fab"
-        title="Call Us"
-        style="background-color: #2b5b9e"
-      >
-        <i class="uil uil-phone"></i>
+    <div class="fixed bottom-5 right-5 z-50 flex flex-col gap-3">
+      <a href="tel:+923160865324" class="w-12 h-12 md:w-14 md:h-14 rounded-full bg-blue-900 text-white flex items-center justify-center shadow-lg hover:scale-110 transition-transform no-underline" title="Call Us">
+        <span class="material-symbols-outlined text-xl md:text-2xl">call</span>
       </a>
-
-      <!-- WhatsApp -->
-      <a
-        href="https://wa.me/923160865324"
-        target="_blank"
-        class="btn contact-fab"
-        title="Chat on WhatsApp"
-        style="background-color: #25d366"
-      >
-        <i class="uil uil-whatsapp"></i>
+      <a href="https://wa.me/923160865324" target="_blank" class="w-12 h-12 md:w-14 md:h-14 rounded-full bg-green-500 text-white flex items-center justify-center shadow-lg hover:scale-110 transition-transform no-underline" title="Chat on WhatsApp">
+        <span class="material-symbols-outlined text-xl md:text-2xl">chat</span>
       </a>
-
-      <!-- Email -->
-      <a
-        href="mailto:solutionxofficial@gmail.com"
-        class="btn contact-fab"
-        title="Email Us"
-        style="background-color: #2b5b9e"
-      >
-        <i class="uil uil-envelope"></i>
+      <a href="mailto:solutionxofficial@gmail.com" class="w-12 h-12 md:w-14 md:h-14 rounded-full bg-blue-900 text-white flex items-center justify-center shadow-lg hover:scale-110 transition-transform no-underline" title="Email Us">
+        <span class="material-symbols-outlined text-xl md:text-2xl">mail</span>
       </a>
     </div>
-
-    <!-- Styles -->
-    <style>
-      .contact-fab {
-        width: 60px;
-        height: 60px;
-        border-radius: 50%;
-        color: white;
-        font-size: 24px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-        transition: all 0.3s ease;
-        text-decoration: none;
-      }
-
-      .contact-fab:hover {
-        transform: scale(1.1);
-        filter: brightness(0.9);
-      }
-    </style>
-
-    <script src="js/modernizr-3.5.0.min.js"></script>
-    <script src="js/jquery-3.6.0.min.js"></script>
-    <script src="js/sw.bundle.js"></script>
-    <script src="js/separateweb.min.js"></script>
-    <script src="js/jquery.validate.min.js"></script>
-    <script src="js/sweetalert2.all.min.js"></script>
-    <script src="js/separate.validation.js"></script>
-    <script src="js/main.js"></script>
-    <script src="js/contact-form.js"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
   </body>
 </html>
